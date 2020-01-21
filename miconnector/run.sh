@@ -11,7 +11,8 @@ echo "Mi-Connector start"
 # Check if config exists already
 mkdir -p $DATA_PATH
 
-#mkdir -p /opt/miconnector
+mkdir -p /opt/miconnector
+chmod a+x /opt/miconnector
 
 echo "create folder /opt/miconnector"
 
