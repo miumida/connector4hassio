@@ -1,10 +1,10 @@
 {
-  "name": "lgtv2mqtt",
-  "version": "1.0.3",
-  "slug": "lgtv2mqtt",
-  "description": "Lgtv to MQTT Bridge",
+  "name": "Mi-Connector",
+  "version": "1.0.0",
+  "slug": "miconnector",
+  "description": "Mi-Connector",
   "auto_uart": true,
-  "url": "https://github.com/miumida/hassio-lgtv2mqtt",
+  "url": "https://github.com/miumida/hassio-Mi-Connector",
   "startup": "before",
   "arch": [
     "armhf",
