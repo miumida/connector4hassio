@@ -5,8 +5,6 @@ CONFIG_PATH=/data/options.json
 echo Mi-Connector!
 
 DATA_PATH=$(jq --raw-output ".data_path" $CONFIG_PATH)
-MQTT_SERVER=$(jq --raw-output ".mqtt_server" $CONFIG_PATH)
-MQTT_USER=$(jq --raw-output ".mqtt_user" $CONFIG_PATH)
 
 echo "Mi-Connector start"
 
@@ -21,7 +19,6 @@ chmod a+x /usr/local/bin/dockerpull
 
 dockerpull /opt/miconnector fison67/mi-connector-arm:latest
 
-ls /opt/miconnector
 
 if [[ -f $DATA_PATH/configuration.yaml ]]; then
     if [[ ! -f $DATA_PATH/.configuration.yaml.bk ]]; then
