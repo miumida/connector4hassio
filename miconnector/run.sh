@@ -13,6 +13,8 @@ echo "[Info] MQTT Sever is [${MQTT_SERVER}] : USER( ${MQTT_USER} )"
 # Check if config exists already
 mkdir -p $DATA_PATH
 
+dockerpull /opt/miconnector fison67/mi-connector-arm:latest
+
 ls /opt/miconnector
 
 if [[ -f $DATA_PATH/configuration.yaml ]]; then
