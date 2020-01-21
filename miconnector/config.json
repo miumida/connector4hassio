@@ -19,7 +19,7 @@
     "config:rw"
   ],
   "options": {
-    "data_path": "/share/lgtv2mqtt",
+    "data_path": "/share/miconnector",
     "homeassistant": true,
     "permit_join": false,
     "mqtt_base_topic": "lgtv",
