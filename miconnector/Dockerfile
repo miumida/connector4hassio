@@ -5,7 +5,7 @@ FROM $BUILD_FROM
 ENV LANG C.UTF-8
 
 ENV LGTV2MQTT_VERSION=1.0.3
-ENV ARCHIVE=lgtv2mqtt-$LGTV2MQTT_VERSION
+ENV ARCHIVE=app
 
 # Get latest version of the lgtv2mqtt app
 RUN apk add --update --no-cache curl jq nodejs npm go wget
@@ -28,10 +28,10 @@ RUN [ "dockerpull", "/opt/miconnector", "fison67/mi-connector-arm:latest" ]
 # Install dependencies
 #RUN npm install -g
 
-#COPY run.sh "/$ARCHIVE/run.sh"
-#WORKDIR "/$ARCHIVE"
+COPY run.sh "/$ARCHIVE/run.sh"
+WORKDIR "/$ARCHIVE"
 
-#RUN ["chmod", "a+x", "./run.sh"]
-#CMD [ "./run.sh" ]
+RUN ["chmod", "a+x", "./run.sh"]
+CMD [ "./run.sh" ]
 # Start app
 #CMD node index.js --verbosity=$lgtv2mqtt_v --name=$lgtv2mqtt_n --url=$lgtv2mqtt_u --tv=$lgtv2mqtt_t
