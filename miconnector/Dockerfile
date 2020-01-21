@@ -8,8 +8,12 @@ ENV LGTV2MQTT_VERSION=1.0.3
 ENV ARCHIVE=lgtv2mqtt-$LGTV2MQTT_VERSION
 
 # Get latest version of the lgtv2mqtt app
-RUN apk add --update --no-cache curl jq nodejs npm go
+RUN apk add --update --no-cache curl jq nodejs npm go wget
 #  npm install -g lgtv2mqtt
+
+RUN wget https://github.com/djjproject/android_over_linux/raw/master/aolothercommand/download-docker-image-rootfs.sh -O /usr/local/bin/dockerpull
+RUN ["chmod", "a+x", "/usr/local/bin/dockerpull"]
+
 
 # Get latest version of the lgtv2mqtt app
 # --strip 1 removes the container folder
