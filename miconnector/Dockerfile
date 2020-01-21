@@ -17,12 +17,14 @@ RUN ["chmod", "a+x", "/usr/local/bin/dockerpull"]
 
 RUN dockerpull /opt/miconnector fison67/mi-connector-arm:latest
 
-RUN apt install build-essential apt-utils iputils-ping git libcairo2-dev libgif-dev libjpeg-dev libgif7 libpango1.0-dev
 
-# Get latest version of the lgtv2mqtt app
+RUN apt-get install -y build-essential apt-utils iputils-ping libudev-dev git
+RUN apt-get install -y libcairo2-dev libgif-dev libjpeg-dev libgif7 libpango1.0-dev
+
 RUN curl -sL https://deb.nodesource.com/setup_9.x | sudo bash -
 
-RUN apt install nodejs ccrypt
+RUN apt-get install nodejs -y
+RUN apt-get install ccrypt -y
 
 # Install dependencies
 RUN npm install -g
