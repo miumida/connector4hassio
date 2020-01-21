@@ -1,0 +1,41 @@
+{
+  "name": "lgtv2mqtt",
+  "version": "1.0.3",
+  "slug": "lgtv2mqtt",
+  "description": "Lgtv to MQTT Bridge",
+  "auto_uart": true,
+  "url": "https://github.com/miumida/hassio-lgtv2mqtt",
+  "startup": "before",
+  "arch": [
+    "armhf",
+    "armv7",
+    "aarch64",
+    "amd64",
+    "i386"
+  ],
+  "boot": "auto",
+  "map": [
+    "share:rw",
+    "config:rw"
+  ],
+  "options": {
+    "data_path": "/share/lgtv2mqtt",
+    "homeassistant": true,
+    "permit_join": false,
+    "mqtt_base_topic": "lgtv",
+    "mqtt_server": "mqtt://core-mosquitto",
+    "mqtt_user": "my_user",
+    "mqtt_password": "my_password",
+    "lgwebostv": "lgwebostv_ip"
+  },
+  "schema": {
+    "data_path": "str",
+    "homeassistant": "bool",
+    "permit_join": "bool",
+    "mqtt_base_topic": "str",
+    "mqtt_server": "str",
+    "mqtt_user": "str?",
+    "mqtt_password": "str?",
+    "lgwebostv": "str?"
+  }
+}
