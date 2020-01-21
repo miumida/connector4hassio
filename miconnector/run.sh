@@ -2,18 +2,18 @@
 
 CONFIG_PATH=/data/options.json
 
-echo lgtv2mqtt!
+echo Mi-Connector!
 
 DATA_PATH=$(jq --raw-output ".data_path" $CONFIG_PATH)
 MQTT_SERVER=$(jq --raw-output ".mqtt_server" $CONFIG_PATH)
 MQTT_USER=$(jq --raw-output ".mqtt_user" $CONFIG_PATH)
-LGWEBOSTV=$(jq --raw-output ".lgwebostv" $CONFIG_PATH)
 
 echo "[Info] MQTT Sever is [${MQTT_SERVER}] : USER( ${MQTT_USER} )"
-echo "[Info] LGWEBOSTV IP is [${LGWEBOSTV}"]
 
 # Check if config exists already
 mkdir -p $DATA_PATH
+
+ls /opt/miconnector
 
 if [[ -f $DATA_PATH/configuration.yaml ]]; then
     if [[ ! -f $DATA_PATH/.configuration.yaml.bk ]]; then
