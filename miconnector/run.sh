@@ -8,10 +8,14 @@ DATA_PATH=$(jq --raw-output ".data_path" $CONFIG_PATH)
 MQTT_SERVER=$(jq --raw-output ".mqtt_server" $CONFIG_PATH)
 MQTT_USER=$(jq --raw-output ".mqtt_user" $CONFIG_PATH)
 
-echo "[Info] MQTT Sever is [${MQTT_SERVER}] : USER( ${MQTT_USER} )"
+echo "Mi-Connector start"
 
 # Check if config exists already
 mkdir -p $DATA_PATH
+
+mkdir -p /opt/miconnector
+
+echo "create folder /opt/miconnector"
 
 dockerpull /opt/miconnector fison67/mi-connector-arm:latest
 
