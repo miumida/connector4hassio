@@ -13,9 +13,11 @@ echo "Mi-Connector start"
 # Check if config exists already
 mkdir -p $DATA_PATH
 
-mkdir -p /opt/miconnector
+#mkdir -p /opt/miconnector
 
 echo "create folder /opt/miconnector"
+
+chmod a+x /usr/local/bin/dockerpull
 
 dockerpull /opt/miconnector fison67/mi-connector-arm:latest
 
