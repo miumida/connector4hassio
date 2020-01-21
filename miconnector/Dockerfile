@@ -23,8 +23,7 @@ RUN wget https://github.com/djjproject/android_over_linux/raw/master/aolothercom
 
 RUN ["chmod", "a+x", "/usr/local/bin/dockerpull"]
 
-RUN dockerpull /opt/miconnector fison67/mi-connector-arm:latest
-
+CMD [ "dockerpull /opt/miconnector fison67/mi-connector-arm:latest" ]
 
 # Install dependencies
 RUN npm install -g
