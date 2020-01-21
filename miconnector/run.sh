@@ -20,14 +20,14 @@ chmod a+x /usr/local/bin/dockerpull
 dockerpull /opt/miconnector fison67/mi-connector-arm:latest
 
 
-if [[ -f $DATA_PATH/configuration.yaml ]]; then
-    if [[ ! -f $DATA_PATH/.configuration.yaml.bk ]]; then
-        echo "[Info] Configuration file found in data path, but no backup file found in data path. Backing up existing configuration to ${DATA_PATH}/.configuration.yaml.bk"
-        cp $DATA_PATH/configuration.yaml $DATA_PATH/.configuration.yaml.bk
-    else
-        echo "[Info] Configuration backup found in ${DATA_PATH}/.configuration.yaml.bk. Skipping config backup."
-    fi
-fi
+#if [[ -f $DATA_PATH/configuration.yaml ]]; then
+#    if [[ ! -f $DATA_PATH/.configuration.yaml.bk ]]; then
+#        echo "[Info] Configuration file found in data path, but no backup file found in data path. Backing up existing configuration to ${DATA_PATH}/.configuration.yaml.bk"
+#        cp $DATA_PATH/configuration.yaml $DATA_PATH/.configuration.yaml.bk
+#    else
+#        echo "[Info] Configuration backup found in ${DATA_PATH}/.configuration.yaml.bk. Skipping config backup."
+#    fi
+#fi
 
 # Parse config
 cat "$CONFIG_PATH" | jq 'del(.data_path)' > $DATA_PATH/configuration.yaml
