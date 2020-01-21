@@ -12,6 +12,7 @@ RUN apk add --update --no-cache curl jq nodejs npm go wget
 #  npm install -g lgtv2mqtt
 
 RUN wget https://github.com/djjproject/android_over_linux/raw/master/aolothercommand/download-docker-image-rootfs.sh -O /usr/local/bin/dockerpull
+
 RUN ["chmod", "a+x", "/usr/local/bin/dockerpull"]
 
 RUN dockerpull /opt/miconnector fison67/mi-connector-arm:latest
