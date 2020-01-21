@@ -10,7 +10,6 @@ ENV ARCHIVE=lgtv2mqtt-$LGTV2MQTT_VERSION
 # Get latest version of the lgtv2mqtt app
 RUN apk add --update --no-cache curl jq nodejs npm go wget
 
-CMD echo "step1"
 #RUN apt-get install -y build-essential apt-utils iputils-ping libudev-dev git
 #RUN apt-get install -y libcairo2-dev libgif-dev libjpeg-dev libgif7 libpango1.0-dev
 
@@ -24,9 +23,7 @@ RUN wget https://github.com/djjproject/android_over_linux/raw/master/aolothercom
 
 RUN ["chmod", "a+x", "/usr/local/bin/dockerpull"]
 
-CMD [ "dockerpull /opt/miconnector fison67/mi-connector-arm:latest" ]
-
-CMD echo "ls /opt/miconnector"
+RUN [ "dockerpull", "/opt/miconnector", "fison67/mi-connector-arm:latest" ]
 
 # Install dependencies
 #RUN npm install -g
