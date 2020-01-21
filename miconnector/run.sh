@@ -11,7 +11,7 @@ echo "Mi-Connector start"
 # Check if config exists already
 mkdir -p $DATA_PATH
 
-mkdir -p /opt/miconnector
+#mkdir -p /opt/miconnector
 chmod a+x /opt/miconnector
 
 echo "create folder /opt/miconnector"
@@ -32,6 +32,7 @@ dockerpull /opt/miconnector fison67/mi-connector-arm:latest
 
 # Parse config
 cat "$CONFIG_PATH" | jq 'del(.data_path)' > $DATA_PATH/configuration.yaml
+
 
 # RUN lgtv2mqtt
 #node /usr/lib/node_modules/lgtv2mqtt/index.js --verbosity=info --name=lgtv --url=$MQTT_SERVER --tv=$LGWEBOSTV
