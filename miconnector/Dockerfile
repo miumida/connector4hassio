@@ -10,7 +10,12 @@ ENV ARCHIVE=lgtv2mqtt-$LGTV2MQTT_VERSION
 ENV APP=app
 
 # Get latest version of the lgtv2mqtt app
-RUN apt-get install -y curl jq nodejs npm wget npm golang-go
+RUN apt-get install -y curl
+RUN apt-get install -y jq nodejs
+RUN apt-get install -y npm
+RUN apt-get install -y wget
+RUN apt-get install -y npm
+RUN apt-get install -y golang-go
 #RUN apk add --update --no-cache curl jq nodejs npm go wget build-base
 
 # Get latest version of the lgtv2mqtt app
