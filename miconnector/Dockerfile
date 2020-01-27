@@ -1,6 +1,6 @@
 ARG BUILD_FROM
 #FROM $BUILD_FROM
-FROM debian:latest
+FROM ubuntu:latest
 
 # Add env
 ENV LANG C.UTF-8
@@ -10,6 +10,7 @@ ENV ARCHIVE=lgtv2mqtt-$LGTV2MQTT_VERSION
 ENV APP=app
 
 # Get latest version of the lgtv2mqtt app
+RUN apt-get update -y
 RUN apt-get install -y curl
 RUN apt-get install -y jq nodejs
 RUN apt-get install -y npm
