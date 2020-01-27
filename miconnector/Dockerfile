@@ -1,5 +1,6 @@
 ARG BUILD_FROM
-FROM $BUILD_FROM
+#FROM $BUILD_FROM
+FROM debian:latest
 
 # Add env
 ENV LANG C.UTF-8
@@ -9,7 +10,7 @@ ENV ARCHIVE=lgtv2mqtt-$LGTV2MQTT_VERSION
 ENV APP=app
 
 # Get latest version of the lgtv2mqtt app
-RUN apk add --update --no-cache curl jq nodejs npm go wget
+RUN apk add --update --no-cache curl jq nodejs npm go wget build-base
 
 # Get latest version of the lgtv2mqtt app
 RUN curl -sSL https://github.com/miumida/lgtv2mqtt/tarball/master | tar -xvz --strip 1
