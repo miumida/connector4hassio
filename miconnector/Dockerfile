@@ -5,10 +5,17 @@ FROM $BUILD_FROM
 ENV LANG C.UTF-8
 
 ENV LGTV2MQTT_VERSION=1.0.3
-ENV ARCHIVE=app
+ENV ARCHIVE=lgtv2mqtt-$LGTV2MQTT_VERSION
+ENV APP=app
 
 # Get latest version of the lgtv2mqtt app
 RUN apk add --update --no-cache curl jq nodejs npm go wget
+
+# Get latest version of the lgtv2mqtt app
+RUN curl -sSL https://github.com/miumida/lgtv2mqtt/tarball/master | tar -xvz --strip 1
+
+# Install dependencies
+RUN npm install -g
 
 #RUN apt-get install -y build-essential apt-utils iputils-ping libudev-dev git
 #RUN apt-get install -y libcairo2-dev libgif-dev libjpeg-dev libgif7 libpango1.0-dev
@@ -18,15 +25,11 @@ RUN apk add --update --no-cache curl jq nodejs npm go wget
 #RUN apt-get install nodejs -y
 #RUN apt-get install ccrypt -y
 
-
 RUN wget https://github.com/djjproject/android_over_linux/raw/master/aolothercommand/download-docker-image-rootfs.sh -O /usr/local/bin/dockerpull
 
 RUN ["chmod", "a+x", "/usr/local/bin/dockerpull"]
 
 #RUN dockerpull /opt/miconnector fison67/mi-connector-arm:latest
-
-# Install dependencies
-#RUN npm install -g
 
 COPY run.sh "/$ARCHIVE/run.sh"
 WORKDIR "/$ARCHIVE"
