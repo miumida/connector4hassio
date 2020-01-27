@@ -25,7 +25,7 @@ RUN npm install -g
 #RUN apt-get install nodejs -y
 #RUN apt-get install ccrypt -y
 
-RUN wget https://github.com/djjproject/android_over_linux/raw/master/aolothercommand/download-docker-image-rootfs.sh -O /usr/local/bin/dockerpull
+#RUN wget https://github.com/djjproject/android_over_linux/raw/master/aolothercommand/download-docker-image-rootfs.sh -O /usr/local/bin/dockerpull
 RUN wget https://github.com/miumida/android_over_linux/blob/master/aolothercommand/download-docker-image-rootfs.sh -O /usr/local/bin/dockerpull
 
 RUN ["chmod", "a+x", "/usr/local/bin/dockerpull"]
