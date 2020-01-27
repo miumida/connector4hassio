@@ -23,7 +23,7 @@ RUN apt-get install -y golang-go
 RUN curl -sSL https://github.com/miumida/lgtv2mqtt/tarball/master | tar -xvz --strip 1
 
 # Install dependencies
-RUN npm install -g
+#RUN npm install -g
 
 RUN apt-get install -y build-essential apt-utils iputils-ping libudev-dev git
 RUN apt-get install -y libcairo2-dev libgif-dev libjpeg-dev libgif7 libpango1.0-dev
