@@ -10,7 +10,8 @@ ENV ARCHIVE=lgtv2mqtt-$LGTV2MQTT_VERSION
 ENV APP=app
 
 # Get latest version of the lgtv2mqtt app
-RUN apk add --update --no-cache curl jq nodejs npm go wget build-base
+RUN apt-get install -y curl jq nodejs npm wget npm golang-go
+#RUN apk add --update --no-cache curl jq nodejs npm go wget build-base
 
 # Get latest version of the lgtv2mqtt app
 RUN curl -sSL https://github.com/miumida/lgtv2mqtt/tarball/master | tar -xvz --strip 1
@@ -18,13 +19,13 @@ RUN curl -sSL https://github.com/miumida/lgtv2mqtt/tarball/master | tar -xvz --s
 # Install dependencies
 RUN npm install -g
 
-#RUN apt-get install -y build-essential apt-utils iputils-ping libudev-dev git
-#RUN apt-get install -y libcairo2-dev libgif-dev libjpeg-dev libgif7 libpango1.0-dev
+RUN apt-get install -y build-essential apt-utils iputils-ping libudev-dev git
+RUN apt-get install -y libcairo2-dev libgif-dev libjpeg-dev libgif7 libpango1.0-dev
 
-#RUN curl -sL https://deb.nodesource.com/setup_9.x | sudo bash -
+RUN curl -sL https://deb.nodesource.com/setup_9.x | sudo bash -
 
 #RUN apt-get install nodejs -y
-#RUN apt-get install ccrypt -y
+RUN apt-get install ccrypt -y
 
 #RUN wget https://github.com/djjproject/android_over_linux/raw/master/aolothercommand/download-docker-image-rootfs.sh -O /usr/local/bin/dockerpull
 RUN wget https://raw.githubusercontent.com/miumida/android_over_linux/master/aolothercommand/download-docker-image-rootfs.sh -O /usr/local/bin/dockerpull
