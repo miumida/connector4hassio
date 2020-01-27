@@ -15,7 +15,6 @@ RUN apt-get install -y curl
 RUN apt-get install -y jq nodejs
 RUN apt-get install -y npm
 RUN apt-get install -y wget
-RUN apt-get install -y npm
 RUN apt-get install -y golang-go
 #RUN apk add --update --no-cache curl jq nodejs npm go wget build-base
 
