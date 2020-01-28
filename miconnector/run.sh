@@ -2,24 +2,23 @@
 
 CONFIG_PATH=/data/options.json
 
-echo Mi-Connector!
+echo "[Info] Welcom to hassio-Mi-Connector!"
 
 DATA_PATH=$(jq --raw-output ".data_path" $CONFIG_PATH)
 
-echo "Mi-Connector start"
+echo "[Info] hassio-Mi-Connector Ready"
 
 # Check if config exists already
 mkdir -p $DATA_PATH
 
 chmod a+x /usr/local/bin/dockerpull
 
-echo "download start [ fison67/mi-connector-arm:latest ]"
-dockerpull /opt/miconnector fison67/mi-connector-arm:latest
+echo "[Info] download start [ fison67/mi-connector-arm:latest ]"
+dockerpull /home/miconnector fison67/mi-connector-arm:latest
 
-echo "Mi-Connector move path => /home/miconnector"
-mv /opt/miconnector /home/miconnector
+echo "[Info] dockerpull Complate! => /home/miconnector"
 
-echo "Working Directory => /home/micconnector/usr/src/app"
+echo "[Info] Working Directory => /home/micconnector/usr/src/app"
 cd /home/micconnector/usr/src/app
 
 if [[ -f $DATA_PATH/configuration.yaml ]]; then
