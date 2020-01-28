@@ -5,6 +5,9 @@ CONFIG_PATH=/data/options.json
 echo "[Info] Welcom to hassio-Mi-Connector!"
 
 DATA_PATH=$(jq --raw-output ".data_path" $CONFIG_PATH)
+MQTT_SERVER=$(jq --raw-output ".mqtt_server" $CONFIG_PATH)
+MQTT_USER=$(jq --raw-output ".mqtt_user" $CONFIG_PATH)
+LGWEBOSTV=$(jq --raw-output ".lgwebostv" $CONFIG_PATH)
 
 echo "[Info] hassio-Mi-Connector Ready"
 
@@ -34,4 +37,6 @@ fi
 cat "$CONFIG_PATH" | jq 'del(.data_path)' > $DATA_PATH/configuration.yaml
 
 # start miconnector
-npm start
+#npm start
+# RUN lgtv2mqtt
+node /usr/lib/node_modules/lgtv2mqtt/index.js --verbosity=info --name=lgtv --url=$MQTT_SERVER --tv=$LGWEBOSTV
