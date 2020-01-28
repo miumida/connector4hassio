@@ -23,10 +23,10 @@ RUN ["chmod", "a+x", "/usr/local/bin/dockerpull"]
 
 #RUN dockerpull /opt/miconnector fison67/mi-connector-arm:latest
 
-COPY run.sh "/home/miconnector/run.sh"
+COPY run.sh "/home/miconnector/usr/src/app/run.sh"
 #WORKDIR "/home/miconnector/usr/src/app"
-WORKDIR "/home/miconnector"
+WORKDIR "/home/miconnector/usr/src/app"
 
 # Start app
-RUN ["chmod", "a+x", "/home/miconnector/run.sh"]
-CMD [ "/home/miconnector/run.sh" ]
+RUN ["chmod", "a+x", "/home/miconnector/usr/src/app/run.sh"]
+CMD [ "/home/miconnector/usr/src/app/run.sh" ]
