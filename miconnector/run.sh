@@ -19,6 +19,8 @@ chmod a+x /usr/local/bin/dockerpull
 echo "download start [ fison67/mi-connector-arm:latest ]"
 dockerpull /opt/miconnector fison67/mi-connector-arm:latest
 
+echo "Mi-Connector move path => /home/miconnector"
+mv /opt/miconnector /home/miconnector
 
 if [[ -f $DATA_PATH/configuration.yaml ]]; then
     if [[ ! -f $DATA_PATH/.configuration.yaml.bk ]]; then
@@ -33,5 +35,6 @@ fi
 cat "$CONFIG_PATH" | jq 'del(.data_path)' > $DATA_PATH/configuration.yaml
 
 
-# RUN lgtv2mqtt
-node /usr/lib/node_modules/lgtv2mqtt/index.js --verbosity=info --name=lgtv --url=$MQTT_SERVER --tv=$LGWEBOSTV
+# start miconnector
+npm start
+#node /usr/lib/node_modules/lgtv2mqtt/index.js --verbosity=info --name=lgtv --url=$MQTT_SERVER --tv=$LGWEBOSTV
