@@ -4,8 +4,8 @@ FROM resin/rpi-raspbian:latest
 # Add env
 ENV LANG C.UTF-8
 
-ENV HASSIO-MICONNECTOR_VERSION=1.0.0
-ENV ARCHIVE=miconnector-$HASSIO-MICONNECTOR_VERSION
+ENV HASSIO_MICONNECTOR_VERSION=1.0.0
+ENV ARCHIVE=miconnector-$HASSIO_MICONNECTOR_VERSION
 
 # apt-get Update & Install
 RUN apt-get update -y
