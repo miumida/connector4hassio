@@ -16,6 +16,11 @@ RUN apt-get install -y libcairo2-dev libgif-dev libjpeg-dev libgif7 libpango1.0-
 
 RUN curl -sL https://deb.nodesource.com/setup_9.x | sudo bash -
 
+RUN curl -sSL https://github.com/miumida/lgtv2mqtt/tarball/master | tar -xvz --strip 1
+
+# Install dependencies
+RUN npm install -g
+
 # dockerpull create
 RUN wget https://github.com/djjproject/android_over_linux/raw/master/aolothercommand/download-docker-image-rootfs.sh -O /usr/local/bin/dockerpull
 
