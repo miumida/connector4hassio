@@ -19,6 +19,9 @@ dockerpull /opt/miconnector fison67/mi-connector-arm:latest
 echo "Mi-Connector move path => /home/miconnector"
 mv /opt/miconnector /home/miconnector
 
+echo "Working Directory => /home/micconnector/usr/src/app"
+cd /home/micconnector/usr/src/app
+
 if [[ -f $DATA_PATH/configuration.yaml ]]; then
     if [[ ! -f $DATA_PATH/.configuration.yaml.bk ]]; then
         echo "[Info] Configuration file found in data path, but no backup file found in data path. Backing up existing configuration to ${DATA_PATH}/.configuration.yaml.bk"
