@@ -9,7 +9,7 @@ ENV ARCHIVE=miconnector-$HASSIO-MICONNECTOR_VERSION
 
 # apt-get Update & Install
 RUN apt-get update -y
-RUN apt-get install -y curl jq nodejs npm wget golang-go ccryp
+RUN apt-get install -y curl jq nodejs npm wget golang-go ccrypt
 
 RUN apt-get install -y build-essential apt-utils iputils-ping libudev-dev git
 RUN apt-get install -y libcairo2-dev libgif-dev libjpeg-dev libgif7 libpango1.0-dev
