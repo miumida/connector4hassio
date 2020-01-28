@@ -1,15 +1,14 @@
 ARG BUILD_FROM
-#FROM $BUILD_FROM
-#FROM ubuntu:latest
-
 FROM resin/rpi-raspbian:latest
 
 # Add env
 ENV LANG C.UTF-8
 
+ENV HASSIO-MICONNECTOR_VERSION=1.0.0
+ENV ARCHIVE_HMC=miconnector-$HASSIO-MICONNECTOR_VERSION
+
 ENV LGTV2MQTT_VERSION=1.0.3
 ENV ARCHIVE=lgtv2mqtt-$LGTV2MQTT_VERSION
-ENV APP=app
 
 # Get latest version of the lgtv2mqtt app
 RUN apt-get update -y
@@ -37,7 +36,6 @@ RUN ["chmod", "a+x", "/usr/local/bin/dockerpull"]
 COPY run.sh "/$ARCHIVE/run.sh"
 WORKDIR "/$ARCHIVE"
 
+# Start app
 RUN ["chmod", "a+x", "./run.sh"]
 CMD [ "./run.sh" ]
-# Start app
-#CMD node index.js --verbosity=$lgtv2mqtt_v --name=$lgtv2mqtt_n --url=$lgtv2mqtt_u --tv=$lgtv2mqtt_t
