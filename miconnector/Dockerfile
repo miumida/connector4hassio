@@ -35,8 +35,6 @@ RUN apt-get install -y ccrypt
 
 RUN mkdir /config
 
-RUN npm install
-
 COPY run.sh "/home/miconnector/run.sh"
 WORKDIR "/home/miconnector"
 
