@@ -35,6 +35,8 @@ RUN apt-get install -y nodejs ccrypt
 COPY run.sh "/home/miconnector/run.sh"
 WORKDIR "/home/miconnector"
 
+RUN npm install
+
 # Start app
 RUN ["chmod", "a+x", "/home/miconnector/run.sh"]
 CMD [ "/home/miconnector/run.sh" ]
