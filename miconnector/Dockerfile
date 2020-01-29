@@ -16,20 +16,19 @@ RUN apt-get install -y libcairo2-dev libgif-dev libjpeg-dev libgif7 libpango1.0-
 
 RUN curl -sL https://deb.nodesource.com/setup_9.x | sudo bash -
 
-RUN curl -sSL https://github.com/miumida/lgtv2mqtt/tarball/master | tar -xvz --strip 1
+#RUN curl -sSL https://github.com/miumida/lgtv2mqtt/tarball/master | tar -xvz --strip 1
 
 # Install dependencies
-RUN npm install -g
+#RUN npm install -g
 
 # dockerpull create
 RUN wget https://github.com/djjproject/android_over_linux/raw/master/aolothercommand/download-docker-image-rootfs.sh -O /usr/local/bin/dockerpull
 
 RUN ["chmod", "a+x", "/usr/local/bin/dockerpull"]
 
-#RUN dockerpull /opt/miconnector fison67/mi-connector-arm:latest
+RUN dockerpull /home/miconnector fison67/mi-connector-arm:latest
 
 COPY run.sh "/home/miconnector/usr/src/app/run.sh"
-#WORKDIR "/home/miconnector/usr/src/app"
 WORKDIR "/home/miconnector/usr/src/app"
 
 # Start app
