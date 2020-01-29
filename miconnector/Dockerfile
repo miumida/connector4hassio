@@ -9,14 +9,16 @@ ENV ARCHIVE=miconnector-$HASSIO_MICONNECTOR_VERSION
 
 # apt-get Update & Install
 RUN apt-get update -y
-RUN apt-get install -y curl jq npm wget golang-go
+RUN apt-get install -y curl jq golang-go wget npm
 
 # dockerpull create
 RUN wget https://github.com/djjproject/android_over_linux/raw/master/aolothercommand/download-docker-image-rootfs.sh -O /usr/local/bin/dockerpull
 
 RUN ["chmod", "a+x", "/usr/local/bin/dockerpull"]
 
-RUN dockerpull /home/miconnector fison67/mi-connector-arm:latest
+RUN dockerpull /opt/miconnector fison67/mi-connector-arm:latest
+
+RUN mv /opt/miconnector/usr/src/app /home/miconnector
 
 # 의존성 package 설치
 RUN apt-get install -y build-essential apt-utils iputils-ping libudev-dev git
@@ -27,7 +29,7 @@ RUN curl -sL https://deb.nodesource.com/setup_9.x | sudo bash -
 RUN apt-get install -y nodejs ccrypt
 
 COPY run.sh "/home/miconnector/run.sh"
-WORKDIR "/home/miconnector/usr/src/app"
+WORKDIR "/home/miconnector"
 
 # Start app
 RUN ["chmod", "a+x", "/home/miconnector/run.sh"]
