@@ -33,6 +33,8 @@ RUN curl -sL https://deb.nodesource.com/setup_9.x | sudo bash -
 #RUN apt-get install -y nodejs
 RUN apt-get install -y ccrypt
 
+RUN mkdir /config
+
 RUN npm install
 
 COPY run.sh "/home/miconnector/run.sh"
