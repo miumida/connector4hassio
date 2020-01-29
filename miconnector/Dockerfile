@@ -30,7 +30,8 @@ RUN apt-get install -y libcairo2-dev libgif-dev libjpeg-dev libgif7 libpango1.0-
 
 RUN curl -sL https://deb.nodesource.com/setup_9.x | sudo bash -
 
-RUN apt-get install -y nodejs ccrypt
+#RUN apt-get install -y nodejs
+RUN apt-get install -y ccrypt
 
 COPY run.sh "/home/miconnector/run.sh"
 WORKDIR "/home/miconnector"
