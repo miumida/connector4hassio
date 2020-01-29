@@ -14,15 +14,7 @@ echo "[Info] hassio-Mi-Connector Ready"
 # Check if config exists already
 mkdir -p $DATA_PATH
 
-#chmod a+x /usr/local/bin/dockerpull
-
-echo "[Info] download start [ fison67/mi-connector-arm:latest ]"
-#dockerpull /home/miconnector fison67/mi-connector-arm:latest
-
-echo "[Info] dockerpull Complate! => /home/miconnector"
-
-echo "[Info] Working Directory => /home/micconnector/usr/src/app"
-#cd /home/micconnector/usr/src/app
+node -v
 
 if [[ -f $DATA_PATH/configuration.yaml ]]; then
     if [[ ! -f $DATA_PATH/.configuration.yaml.bk ]]; then
