@@ -7,3 +7,4 @@
 
 ### 관련 사이트
 1. 아기나무집님의 mi_connector github (https://github.com/fison67/mi_connector)
+2. dockerhub의 fison67/mi-connector-arm (https://hub.docker.com/r/fison67/mi-connector-arm)
