@@ -14,8 +14,6 @@ echo "[Info] hassio-Mi-Connector Ready"
 # Check if config exists already
 mkdir -p $DATA_PATH
 
-node -v
-
 if [[ -f $DATA_PATH/configuration.yaml ]]; then
     if [[ ! -f $DATA_PATH/.configuration.yaml.bk ]]; then
         echo "[Info] Configuration file found in data path, but no backup file found in data path. Backing up existing configuration to ${DATA_PATH}/.configuration.yaml.bk"
