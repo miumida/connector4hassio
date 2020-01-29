@@ -1,4 +1,4 @@
-# hassio-Mi-Connector
+# Mi-Connector for hass.io
 테스트 중입니다...
 
 ### 참고사이트
