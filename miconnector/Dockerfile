@@ -9,7 +9,7 @@ ENV ARCHIVE=miconnector-$HASSIO_MICONNECTOR_VERSION
 
 # apt-get Update & Install
 RUN apt-get update -y
-RUN apt-get install -y curl jq nodejs npm wget golang-go
+RUN apt-get install -y curl jq npm wget golang-go
 
 # dockerpull create
 RUN wget https://github.com/djjproject/android_over_linux/raw/master/aolothercommand/download-docker-image-rootfs.sh -O /usr/local/bin/dockerpull
@@ -24,7 +24,7 @@ RUN apt-get install -y libcairo2-dev libgif-dev libjpeg-dev libgif7 libpango1.0-
 
 RUN curl -sL https://deb.nodesource.com/setup_9.x | sudo bash -
 
-RUN apt-get install -y ccrypt
+RUN apt-get install -y nodejs ccrypt
 
 COPY run.sh "/home/miconnector/run.sh"
 WORKDIR "/home/miconnector/usr/src/app"
