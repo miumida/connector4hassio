@@ -3,3 +3,4 @@
 
 ### 참고사이트
 DJJ PROJECT :: [IOT프로젝트] 2. mi-connector on AoL(https://blog.djjproject.com/608)
+DJJ PROJECT :: docker image rootfs 만들기(https://blog.djjproject.com/626)
