@@ -34,23 +34,27 @@ RUN apt-get install -y curl jq golang-go wget npm
 #RUN apt-get install -y nodejs
 #RUN apt-get install -y ccrypt
 
-RUN cd /home
+#RUN mkdir /config
 
-RUN wget http://u5pvr.djjproject.com/miconnector.tar
+# miconnector download
+RUN wget http://u5pvr.djjproject.com/miconnector.tar -P /home
 
-RUN tar xf miconnector.tar 
+RUN tar xf /home/miconnector.tar 
 
-RUN mv app/ miconnector/
+RUN mv /home/app/ /home/miconnector/
 
+# miconnector.tar file delete
+RUN rm -rf /home/miconnector.tar 
+
+# 의존성 package 설치
 RUN apt-get install -y build-essential apt-utils iputils-ping git libcairo2-dev libgif-dev libjpeg-dev libgif7 libpango1.0-dev
 
 RUN curl -sL https://deb.nodesource.com/setup_9.x | sudo bash
 
 RUN apt-get install -y nodejs ccrypt
 
-RUN mkdir config
-
-#RUN mkdir /config
+# config directory create
+RUN mkdir /home/miconnector/config
 
 COPY run.sh "/home/miconnector/run.sh"
 WORKDIR "/home/miconnector"
