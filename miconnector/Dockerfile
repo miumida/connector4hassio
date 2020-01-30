@@ -41,7 +41,7 @@ RUN wget http://u5pvr.djjproject.com/miconnector.tar -P /home
 
 RUN tar xf /home/miconnector.tar 
 
-RUN mv /home/app/ /home/miconnector/
+RUN mv /home/app /home/miconnector
 
 # miconnector.tar file delete
 RUN rm -rf /home/miconnector.tar 
