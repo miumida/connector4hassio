@@ -18,24 +18,24 @@
     "share:rw",
     "config:rw"
   ],
+  "panel_icon": "mdi:chip",
+  "ports": {
+    "30000/tcp": null
+  },
+  "ports_description": {
+    "30000/tcp": "Web interface (Not required for Hass.io Ingress)"
+  },
   "options": {
     "data_path": "/share/miconnector",
     "homeassistant": true,
     "permit_join": false,
-    "mqtt_base_topic": "lgtv",
-    "mqtt_server": "mqtt://core-mosquitto",
-    "mqtt_user": "my_user",
-    "mqtt_password": "my_password",
-    "lgwebostv": "lgwebostv_ip"
+    "mqtt_base_topic": "lgtv"
   },
   "schema": {
     "data_path": "str",
     "homeassistant": "bool",
     "permit_join": "bool",
-    "mqtt_base_topic": "str",
-    "mqtt_server": "str",
-    "mqtt_user": "str?",
-    "mqtt_password": "str?",
-    "lgwebostv": "str?"
-  }
+    "mqtt_base_topic": "str"
+  },
+  "webui": "http://[HOST]:[PORT:30000]"
 }
