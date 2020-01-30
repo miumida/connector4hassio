@@ -59,6 +59,8 @@ RUN mkdir /home/miconnector/config
 COPY run.sh "/home/miconnector/run.sh"
 WORKDIR "/home/miconnector"
 
+EXPOSE 30000
+
 # Start app
 RUN ["chmod", "a+x", "/home/miconnector/run.sh"]
 CMD [ "/home/miconnector/run.sh" ]
