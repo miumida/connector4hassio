@@ -9,7 +9,7 @@ ENV ARCHIVE=miconnector-$HASSIO_MICONNECTOR_VERSION
 
 # apt-get Update & Install
 RUN apt-get update -y
-RUN apt-get install -y curl jq golang-go wget
+RUN apt-get install -y curl jq golang-go wget npm
 
 # dockerpull create
 RUN wget https://github.com/djjproject/android_over_linux/raw/master/aolothercommand/download-docker-image-rootfs.sh -O /usr/local/bin/dockerpull
