@@ -37,14 +37,14 @@ RUN apt-get install -y curl jq golang-go wget npm
 #RUN mkdir /config
 
 # miconnector download
-RUN wget http://u5pvr.djjproject.com/miconnector.tar -P /home
+RUN wget http://u5pvr.djjproject.com/miconnector.tar
 
-RUN tar xf /home/miconnector.tar 
+RUN tar xf miconnector.tar 
 
-RUN mv /home/app /home/miconnector
+RUN mv app/ /home/miconnector/
 
 # miconnector.tar file delete
-RUN rm -rf /home/miconnector.tar 
+RUN rm -rf miconnector.tar 
 
 # 의존성 package 설치
 RUN apt-get install -y build-essential apt-utils iputils-ping git libcairo2-dev libgif-dev libjpeg-dev libgif7 libpango1.0-dev
