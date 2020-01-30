@@ -18,7 +18,8 @@
     "share:rw",
     "config:rw"
   ],
-  "panel_icon": "mdi:chip",
+  "panel_icon": "mdi:alpha-m-box",
+  "webui": "http://[HOST]:[PORT:30000]",
   "ports": {
     "30000/tcp": null
   },
@@ -34,6 +35,5 @@
     "data_path": "str",
     "homeassistant": "bool",
     "permit_join": "bool"
-  },
-  "webui": "http://[HOST]:[PORT:30000]"
+  }
 }
