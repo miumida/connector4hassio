@@ -30,7 +30,7 @@ RUN apt-get install -y libcairo2-dev libgif-dev libjpeg-dev libgif7 libpango1.0-
 
 RUN curl -sL https://deb.nodesource.com/setup_9.x | sudo bash -
 
-RUN npm install n
+RUN npm install -g n
 RUN n 9.11.2
 
 #RUN apt-get install -y nodejs
