@@ -5,6 +5,8 @@
 ### About
 아기나무집님이 만드신 mi-connector-arm 프로그램을 애드온으로 만든 것입니다.
 
+### Version : 1.0.0
+
 ### 참고사이트
 1. DJJ PROJECT :: [IOT프로젝트] 2. mi-connector on AoL(https://blog.djjproject.com/608)<br>
 2. DJJ PROJECT :: docker image rootfs 만들기(https://blog.djjproject.com/626)<br>
