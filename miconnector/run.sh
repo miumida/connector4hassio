@@ -2,14 +2,11 @@
 
 CONFIG_PATH=/data/options.json
 
-echo "[Info] Welcom to hassio-Mi-Connector!"
+echo "[Info] Welcom to miconnector4hassio!"
 
 DATA_PATH=$(jq --raw-output ".data_path" $CONFIG_PATH)
-#MQTT_SERVER=$(jq --raw-output ".mqtt_server" $CONFIG_PATH)
-#MQTT_USER=$(jq --raw-output ".mqtt_user" $CONFIG_PATH)
-#LGWEBOSTV=$(jq --raw-output ".lgwebostv" $CONFIG_PATH)
 
-echo "[Info] hassio-Mi-Connector Ready"
+echo "[Info] miconnector4hassio addons Start Ready"
 
 # Check if config exists already
 mkdir -p $DATA_PATH
@@ -26,7 +23,6 @@ fi
 # Parse config
 cat "$CONFIG_PATH" | jq 'del(.data_path)' > $DATA_PATH/configuration.yaml
 
+echo "[Info] Start miconnector:D"
 # start miconnector
 npm start
-# RUN lgtv2mqtt
-#node /usr/lib/node_modules/lgtv2mqtt/index.js --verbosity=info --name=lgtv --url=$MQTT_SERVER --tv=$LGWEBOSTV
