@@ -19,14 +19,12 @@ RUN ["chmod", "a+x", "/usr/local/bin/dockerpull"]
 RUN dockerpull /opt/miconnector fison67/mi-connector-arm:latest
 
 # miconnector copy
-RUN mv /opt/miconnector/usr/src/app /home/miconnector
-
-# docker image 삭제
-RUN rm -rf /opt/miconnector
+RUN mv /opt/miconnector/usr/src/app /home/miconnector \
+    && rm -rf /opt/miconnector
 
 # node 버전 의존성 처리
-RUN apt-get install -y python3-setuptools
-RUN easy_install3 nodeenv
+RUN apt-get install -y python3-setuptools \
+    && easy_install3 nodeenv
 
 RUN nodeenv --node=9.11.2 /home/miconnector
 
