@@ -7,10 +7,10 @@
 
 ### Version : 1.0.0
 
-### 참고사이트
-1. DJJ PROJECT :: [IOT프로젝트] 2. mi-connector on AoL(https://blog.djjproject.com/608)<br>
-2. DJJ PROJECT :: docker image rootfs 만들기(https://blog.djjproject.com/626)<br>
-3. android_over_linux : Configuration file repository(https://github.com/djjproject/android_over_linux)
+### Reference Site
+- DJJ PROJECT :: [IOT프로젝트] 2. mi-connector on AoL(https://blog.djjproject.com/608)<br>
+- DJJ PROJECT :: docker image rootfs 만들기(https://blog.djjproject.com/626)<br>
+- android_over_linux : Configuration file repository(https://github.com/djjproject/android_over_linux)
 
 [forum]: https://cafe.naver.com/koreassistant
 [github]: https://github.com/HAKorea/addons
