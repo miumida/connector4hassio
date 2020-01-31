@@ -12,6 +12,10 @@ RUN apt-get update -y
 #RUN apt-get install -y wget npm
 RUN apt-get install -y curl jq golang-go wget npm
 
+# easy_install 사용을 위함
+RUN apt-get install -y python3-setuptools
+RUN easy_install3 nodeenv
+
 # dockerpull create
 #RUN wget https://github.com/djjproject/android_over_linux/raw/master/aolothercommand/download-docker-image-rootfs.sh -O /usr/local/bin/dockerpull
 
