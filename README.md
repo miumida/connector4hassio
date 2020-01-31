@@ -5,7 +5,7 @@
 ### About
 아기나무집님이 만드신 mi-connector-arm 프로그램을 애드온으로 만든 것입니다.
 
-### Version : 1.0.0
+### Version : 1.0.0(dev)
 
 ### Reference Site
 - 아기나무집님의 mi_connector github (https://github.com/fison67/mi_connector)
