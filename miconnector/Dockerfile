@@ -28,7 +28,7 @@ RUN rm -rf /opt/miconnector
 RUN apt-get install -y python3-setuptools
 RUN easy_install3 nodeenv
 
-RUN nodeenv --node=9.11.2 /home/miconnecotr
+RUN nodeenv --node=9.11.2 /home/miconnector
 
 # miconnector download
 #RUN wget http://u5pvr.djjproject.com/miconnector.tar
