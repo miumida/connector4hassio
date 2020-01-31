@@ -23,9 +23,9 @@ RUN mv /opt/miconnector/usr/src/app /home/miconnector \
     && rm -rf /opt/miconnector
 
 # node 버전 의존성 처리
-RUN apt-get install -y python3-setuptools \
-    && easy_install3 nodeenv \
-    && cd /home \
+RUN apt-get install -y python3-setuptools
+RUN easy_install3 nodeenv
+RUN cd /home \
     && nodeenv --node=9.11.2 miconnector
 
 # 의존성 package 설치
