@@ -19,15 +19,12 @@ RUN ["chmod", "a+x", "/usr/local/bin/dockerpull"]
 RUN dockerpull /opt/miconnector fison67/mi-connector-arm:latest
 
 # miconnector copy
-RUN mv /opt/miconnector/usr/src/app /miconnector \
+RUN mv /opt/miconnector/usr/src/app /home/miconnector \
     && rm -rf /opt/miconnector
 
 # node 버전 의존성 처리
 RUN apt-get install -y python3-setuptools
 RUN easy_install3 nodeenv
-RUN nodeenv --node=9.11.2 miconnector
-
-RUN mv /miconnector /home/miconnector
 
 # 의존성 package 설치
 RUN apt-get install -y build-essential apt-utils iputils-ping git libcairo2-dev libgif-dev libjpeg-dev libgif7 libpango1.0-dev
@@ -35,6 +32,8 @@ RUN apt-get install -y build-essential apt-utils iputils-ping git libcairo2-dev 
 RUN curl -sL https://deb.nodesource.com/setup_9.x | sudo bash -
 
 RUN apt-get install -y nodejs ccrypt
+
+RUN nodeenv --node=9.11.2 /home/miconnector
 
 # config directory create
 RUN mkdir /home/miconnector/config
