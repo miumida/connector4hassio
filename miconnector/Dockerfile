@@ -23,8 +23,8 @@ RUN mv /opt/miconnector/usr/src/app /home/miconnector \
     && rm -rf /opt/miconnector
 
 # node 버전 의존성 처리
-RUN apt-get install -y python3-setuptools
-RUN easy_install3 nodeenv
+RUN apt-get install -y python-setuptools
+RUN easy_install nodeenv
 
 # 의존성 package 설치
 RUN apt-get install -y build-essential apt-utils iputils-ping git libcairo2-dev libgif-dev libjpeg-dev libgif7 libpango1.0-dev
