@@ -29,7 +29,7 @@ RUN easy_install3 nodeenv
 # 의존성 package 설치
 RUN apt-get install -y build-essential apt-utils iputils-ping git libcairo2-dev libgif-dev libjpeg-dev libgif7 libpango1.0-dev
 
-RUN curl -sL https://deb.nodesource.com/setup_9.x | sudo bash -
+RUN curl -sL https://deb.nodesource.com/setup_9.x | sudo bash
 
 RUN apt-get install -y nodejs ccrypt
 
