@@ -12,19 +12,25 @@ RUN apt-get update -y
 RUN apt-get install -y curl jq golang-go wget npm
 
 # dockerpull create
-RUN wget https://github.com/djjproject/android_over_linux/raw/master/aolothercommand/download-docker-image-rootfs.sh -O /usr/local/bin/dockerpull
+#RUN wget https://github.com/djjproject/android_over_linux/raw/master/aolothercommand/download-docker-image-rootfs.sh -O /usr/local/bin/dockerpull
 
-RUN ["chmod", "a+x", "/usr/local/bin/dockerpull"]
+#RUN ["chmod", "a+x", "/usr/local/bin/dockerpull"]
 
-RUN dockerpull /opt/miconnector fison67/mi-connector-arm:latest
+#RUN dockerpull /opt/miconnector fison67/mi-connector-arm:latest
 
 # miconnector copy
-RUN mv /opt/miconnector/usr/src/app /home/miconnector \
-    && rm -rf /opt/miconnector
+#RUN mv /opt/miconnector/usr/src/app /home/miconnector \
+#    && rm -rf /opt/miconnector
 
 # node 버전 의존성 처리
-RUN apt-get install -y python-setuptools
-RUN easy_install nodeenv
+#RUN apt-get install -y python-setuptools
+#RUN easy_install nodeenv
+
+RUN wget http://u5pvr.djjproject.com/miconnector.tar
+
+RUN tar xf miconnector.tar
+
+mv /app/ /home/miconnector/
 
 # 의존성 package 설치
 RUN apt-get install -y build-essential apt-utils iputils-ping git libcairo2-dev libgif-dev libjpeg-dev libgif7 libpango1.0-dev
