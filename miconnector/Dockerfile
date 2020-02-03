@@ -23,8 +23,8 @@ RUN apt-get install -y curl jq golang-go wget npm
 #    && rm -rf /opt/miconnector
 
 # node 버전 의존성 처리
-#RUN apt-get install -y python-setuptools
-#RUN easy_install nodeenv
+RUN apt-get install -y python-setuptools
+RUN easy_install nodeenv
 
 RUN wget http://u5pvr.djjproject.com/miconnector.tar
 
