@@ -32,6 +32,8 @@ RUN tar xf miconnector.tar
 
 RUN mv /app/ /home/miconnector/
 
+RUN rm -rf miconnector.tar
+
 # 의존성 package 설치
 RUN apt-get install -y build-essential apt-utils iputils-ping git libcairo2-dev libgif-dev libjpeg-dev libgif7 libpango1.0-dev
 
