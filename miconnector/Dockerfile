@@ -41,7 +41,7 @@ RUN curl -sL https://deb.nodesource.com/setup_9.x | sudo bash
 
 RUN apt-get install -y nodejs ccrypt
 
-RUN nodeenv --node=9.11.2 /home/miconnector
+#RUN nodeenv --node=9.11.2 /home/miconnector
 
 # config directory create
 RUN mkdir /home/miconnector/config
