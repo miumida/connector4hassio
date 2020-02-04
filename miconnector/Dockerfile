@@ -49,6 +49,8 @@ RUN mkdir /home/miconnector/config
 COPY run.sh "/home/miconnector/run.sh"
 WORKDIR "/home/miconnector"
 
+RUN npm install
+
 # docker port open 30000
 EXPOSE 30000
 
