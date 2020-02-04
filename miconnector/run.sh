@@ -24,7 +24,6 @@ fi
 cat "$CONFIG_PATH" | jq 'del(.data_path)' > $DATA_PATH/configuration.yaml
 
 echo "[Info] Start miconnector:D"
-npm install
 
 # start miconnector
 npm start
