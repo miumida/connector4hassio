@@ -19,7 +19,7 @@
     "config:rw"
   ],
   "panel_icon": "mdi:alpha-m-box",
-  "webui": "http://[HOST]:[PORT:30000]/miconnector",
+  "webui": "http://[HOST]:[PORT:30000]",
   "ports": {
     "30000/tcp": 30000
   },
