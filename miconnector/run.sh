@@ -11,6 +11,10 @@ echo "[Info] miconnector4hassio addons Start Ready"
 # Check if config exists already
 mkdir -p $DATA_PATH
 
+# Change config.js
+echo "[Info] miconnector4hassio addons config.js editing"
+sed '4s|config/config.json|$DATA_PATH/config.json|' config_bak.js > config.js
+
 if [[ -f $DATA_PATH/configuration.yaml ]]; then
     if [[ ! -f $DATA_PATH/.configuration.yaml.bk ]]; then
         echo "[Info] Configuration file found in data path, but no backup file found in data path. Backing up existing configuration to ${DATA_PATH}/.configuration.yaml.bk"
