@@ -21,6 +21,7 @@ RUN dockerpull /opt/miconnector fison67/mi-connector-arm:latest
 # miconnector copy
 RUN mv /opt/miconnector/usr/src/app /home/miconnector
 RUN rm -rf /opt/miconnector
+RUN cp /home/miconnector/util/config.js /home/miconnector/util/config_bak.js
 
 # 의존성 package 설치
 RUN apt-get install -y build-essential apt-utils iputils-ping git libcairo2-dev libgif-dev libjpeg-dev libgif7 libpango1.0-dev
