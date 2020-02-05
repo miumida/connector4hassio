@@ -13,7 +13,7 @@ mkdir -p $DATA_PATH
 
 # Change config.js
 echo "[Info] miconnector4hassio addons config.js editing"
-sed '4s|config/config.json|config/miconnector/config.json|' config_bak.js > config.js
+sed '4s|config/config.json|config/miconnector/config.json|' util/config_bak.js > util/config.js
 
 if [[ -f $DATA_PATH/configuration.yaml ]]; then
     if [[ ! -f $DATA_PATH/.configuration.yaml.bk ]]; then
