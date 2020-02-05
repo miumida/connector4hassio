@@ -10,6 +10,7 @@ echo "[Info] miconnector4hassio addons Start Ready"
 
 # Check if config exists already
 mkdir -p $DATA_PATH
+mkdir -p config/miconnector
 
 # Change config.js
 echo "[Info] miconnector4hassio addons config.js editing"
