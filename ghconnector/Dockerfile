@@ -5,7 +5,7 @@ FROM resin/rpi-raspbian:latest
 ENV LANG C.UTF-8
 
 ENV GHCONNECTOR4HASSIO_VERSION=1.0.0
-ENV ARCHIVE=miconnector-$GHCONNECTOR4HASSIO_VERSION
+ENV ARCHIVE=ghconnector-$GHCONNECTOR4HASSIO_VERSION
 
 # apt-get Update & Install
 RUN apt-get update -y
