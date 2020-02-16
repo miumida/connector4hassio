@@ -18,7 +18,7 @@ RUN ["chmod", "a+x", "/usr/local/bin/dockerpull"]
 
 RUN dockerpull /opt/ghconnector fison67/gh-connector-rasp:latest
 
-# miconnector copy
+# ghconnector copy
 RUN mv /opt/ghconnector/usr/src/app /home/ghconnector
 RUN rm -rf /opt/ghconnector
 RUN cp /home/ghconnector/util/config.js /home/ghconnector/util/config_bak.js
