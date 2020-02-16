@@ -16,7 +16,7 @@ RUN wget https://github.com/djjproject/android_over_linux/raw/master/aolothercom
 
 RUN ["chmod", "a+x", "/usr/local/bin/dockerpull"]
 
-RUN dockerpull /opt/ghconnector fison67/gh-connector-rasp:latest
+RUN dockerpull /opt/ghconnector fison67/gh-connector-rasp:0.0.2
 
 # ghconnector copy
 RUN mv /opt/ghconnector/usr/src/app /home/ghconnector
