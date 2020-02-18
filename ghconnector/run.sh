@@ -33,4 +33,4 @@ cat "$CONFIG_PATH" | jq 'del(.data_path)' > $DATA_PATH/configuration.yaml
 echo "[Info] Start ghconnector:D"
 
 # start ghconnector
-/usr/bin/npm start
+npm start
