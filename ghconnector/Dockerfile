@@ -35,7 +35,7 @@ RUN apt-get install nodejs npm -y
 # config directory create
 RUN mkdir /home/ghconnector/config
 
-RUN npm install
+#RUN npm install
 
 RUN rm -R /home/ghconnector/node_modules
 
