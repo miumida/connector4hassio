@@ -28,21 +28,20 @@ RUN cp /home/ghconnector/util/config.js /home/ghconnector/util/config_bak.js
 # 의존성 package 설치
 RUN apt-get install -y build-essential apt-utils iputils-ping libcairo2-dev libgif-dev libjpeg-dev libgif7 libavahi-compat-libdnssd-dev
 
-RUN curl -sL https://deb.nodesource.com/setup_10.x -o nodesource_setup.sh
+#RUN curl -sL https://deb.nodesource.com/setup_10.x -o nodesource_setup.sh
+RUN curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
 
-RUN apt-get install nodejs npm -y
+RUN apt-get install nodejs -y
 
 # config directory create
 RUN mkdir /home/ghconnector/config
 
-#RUN npm install
-
-RUN rm -R /home/ghconnector/node_modules
+RUN rm -rf /home/ghconnector/node_modules
 
 COPY run.sh "/home/ghconnector/run.sh"
 WORKDIR "/home/ghconnector"
 
-RUN npm rebuild
+RUN npm install
 
 # docker port open 30010
 EXPOSE 30010
