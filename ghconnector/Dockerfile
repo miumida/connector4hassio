@@ -38,7 +38,7 @@ RUN rm -rf /home/ghconnector/node_modules/*
 COPY run.sh "/home/ghconnector/run.sh"
 WORKDIR "/home/ghconnector"
 
-RUN npm install
+#RUN npm install
 
 # docker port open 30010
 EXPOSE 30010
