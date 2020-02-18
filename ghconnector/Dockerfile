@@ -9,6 +9,8 @@ ENV ARCHIVE=ghconnector-$GHCONNECTOR4HASSIO_VERSION
 
 # apt-get Update & Install
 RUN apt-get update -y
+RUN apt-get upgrade -y
+
 RUN apt-get install -y curl jq golang-go wget npm
 
 # dockerpull create
@@ -24,11 +26,11 @@ RUN rm -rf /opt/ghconnector
 RUN cp /home/ghconnector/util/config.js /home/ghconnector/util/config_bak.js
 
 # 의존성 package 설치
-RUN apt-get install -y build-essential apt-utils iputils-ping git libcairo2-dev libgif-dev libjpeg-dev libgif7 libpango1.0-dev
+RUN apt-get install -y build-essential apt-utils iputils-ping libcairo2-dev libgif-dev libjpeg-dev libgif7 libavahi-compat-libdnssd-dev
 
-RUN curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+RUN curl -sL https://deb.nodesource.com/setup_10.x -o nodesource_setup.sh
 
-RUN apt-get install -y nodejs ccrypt
+RUN apt-get install nodejs -y
 
 # config directory create
 RUN mkdir /home/ghconnector/config
