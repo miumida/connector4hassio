@@ -30,10 +30,12 @@ RUN apt-get install -y build-essential apt-utils iputils-ping libcairo2-dev libg
 
 RUN curl -sL https://deb.nodesource.com/setup_10.x -o nodesource_setup.sh
 
-RUN apt-get install nodejs -y
+RUN apt-get install nodejs npm -y
 
 # config directory create
 RUN mkdir /home/ghconnector/config
+
+RUN npm install
 
 RUN rm -R /home/ghconnector/node_modules
 
