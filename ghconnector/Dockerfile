@@ -33,7 +33,7 @@ RUN apt-get install -y nodejs ccrypt
 # config directory create
 RUN mkdir /home/ghconnector/config
 
-RUN rm -R /home/ghconnector/node_modules
+RUN rm -rf /home/ghconnector/node_modules/*
 
 COPY run.sh "/home/ghconnector/run.sh"
 WORKDIR "/home/ghconnector"
