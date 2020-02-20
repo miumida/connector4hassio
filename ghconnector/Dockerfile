@@ -13,6 +13,8 @@ RUN apt-get upgrade -y
 
 RUN apt-get install -y curl jq golang-go wget npm
 
+RUN apt-get install -y gcc-5 g++-5
+
 # dockerpull create
 RUN wget https://github.com/djjproject/android_over_linux/raw/master/aolothercommand/download-docker-image-rootfs.sh -O /usr/local/bin/dockerpull
 
