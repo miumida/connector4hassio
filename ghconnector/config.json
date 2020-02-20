@@ -4,7 +4,7 @@
   "slug": "ghconnector",
   "description": "Gh-Connector for Hass.io",
   "auto_uart": true,
-  "url": "https://github.com/miumida/miconnector4hassio",
+  "url": "https://github.com/miumida/connector4hassio",
   "startup": "before",
   "arch": [
     "armhf",
