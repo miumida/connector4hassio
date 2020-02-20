@@ -13,8 +13,8 @@ RUN apt-get upgrade -y
 
 #gcc 5.x Install
 RUN apt-get install -y software-properties-common
-RUN add-apt-repository ppa:jonathonf/gcc-5.5
-RUN apt-get install -y gcc-5 g++-5
+#RUN add-apt-repository ppa:jonathonf/gcc-5.5
+RUN apt install -y gcc-5
 
 RUN apt-get install -y curl jq golang-go wget npm
 
