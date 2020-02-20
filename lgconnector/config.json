@@ -24,7 +24,7 @@
     "30020/tcp": 30020
   },
   "ports_description": {
-    "30000/tcp": "Web interface (Not required for Hass.io Ingress)"
+    "30020/tcp": "Web interface (Not required for Hass.io Ingress)"
   },
   "options": {
     "data_path": "/share/miconnector",
