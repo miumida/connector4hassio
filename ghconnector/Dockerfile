@@ -28,6 +28,11 @@ RUN cp /home/ghconnector/util/config.js /home/ghconnector/util/config_bak.js
 # 의존성 package 설치
 RUN apt-get install -y build-essential apt-utils iputils-ping libcairo2-dev libgif-dev libjpeg-dev libgif7 libavahi-compat-libdnssd-dev libstdc++6
 
+RUN sudo add-apt-repository ppa:ubuntu-toolchain-r/test
+RUN sudo apt-get update
+RUN sudo apt-get upgrade
+RUN sudo apt-get dist-upgrade
+
 #RUN curl -sL https://deb.nodesource.com/setup_10.x -o nodesource_setup.sh
 RUN curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
 
