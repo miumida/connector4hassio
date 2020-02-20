@@ -11,9 +11,11 @@ ENV ARCHIVE=ghconnector-$GHCONNECTOR4HASSIO_VERSION
 RUN apt-get update -y
 RUN apt-get upgrade -y
 
-RUN apt-get install -y curl jq golang-go wget npm
-
+#gcc 5.x Install
+RUN add-apt-repository ppa:ubuntu-toolchain-r/test
 RUN apt-get install -y gcc-5 g++-5
+
+RUN apt-get install -y curl jq golang-go wget npm
 
 # dockerpull create
 RUN wget https://github.com/djjproject/android_over_linux/raw/master/aolothercommand/download-docker-image-rootfs.sh -O /usr/local/bin/dockerpull
