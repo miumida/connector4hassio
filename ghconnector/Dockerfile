@@ -13,7 +13,6 @@ RUN apt-get upgrade -y
 
 #gcc 5.x Install
 RUN apt-get install -y software-properties-common
-RUN apt-get install -y gcc-5
 
 RUN apt-get install -y curl jq golang-go wget npm
 
