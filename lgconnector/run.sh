@@ -6,7 +6,7 @@ echo "[Info] Welcom to connector4hassio/lgconnector!"
 
 DATA_PATH=$(jq --raw-output ".data_path" $CONFIG_PATH)
 
-echo "[Info] miconnector4hassio addons Start Ready"
+echo "[Info] lgconnector4hassio addons Start Ready"
 
 # Check if config exists already
 mkdir -p $DATA_PATH
@@ -16,9 +16,13 @@ cp lg-config.json /config/lgconnector/lg-config.json
 
 # Change config.js
 echo "[Info] connector4hassio/lgconnector addons lg-config.js editing"
-sed '10s|config/lg-config.json|config/lgconnector/lg-config.json|' util/config_bak.js > util/config.js
 
+# util/config.js Edit for hassio
+sed '10s|config/lg-config.json|config/lgconnector/lg-config.json|' util/config_bak.js > util/config.js
 sed '23s|config/lg-config.json|config/lgconnector/lg-config.json|' util/config.js
+
+# util/log.js Edit for hassio
+sed '29s|config/lg-connector.log|config/lgconnector/lg-connector.log|' util/log.js
 
 if [[ -f $DATA_PATH/configuration.yaml ]]; then
     if [[ ! -f $DATA_PATH/.configuration.yaml.bk ]]; then
