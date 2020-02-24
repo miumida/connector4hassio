@@ -20,11 +20,10 @@ mkdir -p /config/lgconnector
 echo "[Info] connector4hassio/lgconnector addons lg-config.js editing"
 
 # util/config.js Edit for hassio
-sed '10s|config/lg-config.json|config/lgconnector/lg-config.json|' util/config_bak.js > util/config.js
-sed '23s|config/lg-config.json|config/lgconnector/lg-config.json|' util/config.js > util/config.js
+sed '10,23s|config/lg-config.json|config/lgconnector/lg-config.json|' util/config_bak.js > util/config.js
 
 # util/log.js Edit for hassio
-sed '29s|config/lg-connector.log|config/lgconnector/lg-connector.log|' util/log.js > util/log.js
+sed '29s|config/lg-connector.log|config/lgconnector/lg-connector.log|' util/log_bak.js > util/log.js
 
 if [[ -f $DATA_PATH/configuration.yaml ]]; then
     if [[ ! -f $DATA_PATH/.configuration.yaml.bk ]]; then
