@@ -12,11 +12,13 @@ echo "[Info] miconnector4hassio addons Start Ready"
 mkdir -p $DATA_PATH
 mkdir -p /config/lgconnector
 
-cp config.json /config/lgconnector/config.json
+cp lg-config.json /config/lgconnector/lg-config.json
 
 # Change config.js
-echo "[Info] connector4hassio/lgconnector addons config.js editing"
-sed '4s|config/config.json|config/lgconnector/config.json|' util/config_bak.js > util/config.js
+echo "[Info] connector4hassio/lgconnector addons lg-config.js editing"
+sed '10s|config/lg-config.json|config/lgconnector/lg-config.json|' util/config_bak.js > util/config.js
+
+sed '23s|config/lg-config.json|config/lgconnector/lg-config.json|' util/config.js
 
 if [[ -f $DATA_PATH/configuration.yaml ]]; then
     if [[ ! -f $DATA_PATH/.configuration.yaml.bk ]]; then
