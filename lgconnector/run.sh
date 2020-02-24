@@ -12,7 +12,9 @@ echo "[Info] lgconnector4hassio addons Start Ready"
 mkdir -p $DATA_PATH
 mkdir -p /config/lgconnector
 
-cp lg-config.json /config/lgconnector/lg-config.json
+#if [[ ! -f /config/lgconnector/lg-config.json ]]; then
+#    cp lg-config.json /config/lgconnector/lg-config.json
+#fi
 
 # Change config.js
 echo "[Info] connector4hassio/lgconnector addons lg-config.js editing"
