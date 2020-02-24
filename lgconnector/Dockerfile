@@ -18,10 +18,11 @@ RUN ["chmod", "a+x", "/usr/local/bin/dockerpull"]
 
 RUN dockerpull /opt/lgconnector fison67/lg-connector-rasp:0.0.3
 
-# miconnector copy
+# lgconnector copy
 RUN mv /opt/lgconnector/usr/src/app /home/lgconnector
 RUN rm -rf /opt/lgconnector
 RUN cp /home/lgconnector/util/config.js /home/lgconnector/util/config_bak.js
+RUN cp /home/lgconnector/util/log.js /home/lgconnector/util/log_bak.js
 
 # 의존성 package 설치
 RUN apt-get install -y build-essential apt-utils iputils-ping git libcairo2-dev libgif-dev libjpeg-dev libgif7 libpango1.0-dev
