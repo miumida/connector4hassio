@@ -3,7 +3,7 @@
 ![Supports armv7 Architecture][armv7-shield]
 
 ### About
-아기나무집님이 만드신 mi-connector-arm 프로그램을 애드온으로 만든 것입니다.
+아기나무집님이 만드신 mi-connector 프로그램을 애드온으로 만든 것입니다.
 
 개발중입니다:'D
 
