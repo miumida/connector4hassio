@@ -8,11 +8,8 @@ ENV MICONNECTOR4HASSIO_VERSION=1.0.0
 ENV ARCHIVE=miconnector-$MICONNECTOR4HASSIO_VERSION
 
 # apt-get Update & Install
-RUN apt-get update -y \
- && apt-get -y install --no-install-recommends \
-    curl jq golang-go wget npm \
-    build-essential apt-utils iputils-ping git libcairo2-dev libgif-dev libjpeg-dev libgif7 libpango1.0-dev \
- && rm -rf /var/lib/apt/lists/*
+RUN apt-get update -y 
+RUN apt-get -y install --no-install-recommends curl jq golang-go wget npm
 
 # dockerpull create
 RUN wget https://github.com/djjproject/android_over_linux/raw/master/aolothercommand/download-docker-image-rootfs.sh -O /usr/local/bin/dockerpull
@@ -22,16 +19,19 @@ RUN ["chmod", "a+x", "/usr/local/bin/dockerpull"]
 RUN dockerpull /opt/miconnector fison67/mi-connector-arm:latest
 
 # miconnector copy
-RUN mv /opt/miconnector/usr/src/app /home/miconnector
-RUN rm -rf /opt/miconnector
+RUN mv /opt/miconnector/usr/src/app /home/miconnector && rm -rf /opt/miconnector
 RUN cp /home/miconnector/util/config.js /home/miconnector/util/config_bak.js
 
 # 의존성 package 설치
-#RUN apt-get install -y build-essential apt-utils iputils-ping git libcairo2-dev libgif-dev libjpeg-dev libgif7 libpango1.0-dev
+RUN apt-get install -y build-essential apt-utils iputils-ping git libcairo2-dev libgif-dev libjpeg-dev libgif7 libpango1.0-dev
 
 RUN curl -sL https://deb.nodesource.com/setup_9.x | sudo bash
 
 RUN apt-get -y install --no-install-recommends nodejs ccrypt
+
+# delete temp file
+RUN apt-get clean -y
+RUN rm -rf /var/lib/apt/lists/*
 
 # config directory create
 RUN mkdir /home/miconnector/config
