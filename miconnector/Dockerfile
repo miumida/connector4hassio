@@ -11,7 +11,6 @@ ENV ARCHIVE=miconnector-$MICONNECTOR4HASSIO_VERSION
 RUN apt-get update -y \
  && apt-get -y install --no-install-recommends \
     curl jq golang-go wget npm \
-# 의존성 package 설치
     build-essential apt-utils iputils-ping git libcairo2-dev libgif-dev libjpeg-dev libgif7 libpango1.0-dev \
  && rm -rf /var/lib/apt/lists/*
 
