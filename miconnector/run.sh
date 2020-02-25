@@ -12,7 +12,7 @@ echo "[Info] miconnector4hassio addons Start Ready"
 mkdir -p $DATA_PATH
 mkdir -p /config/miconnector
 
-cp config.json /config/miconnector/config.json
+#cp config.json /config/miconnector/config.json
 
 # Change config.js
 echo "[Info] miconnector4hassio addons config.js editing"
