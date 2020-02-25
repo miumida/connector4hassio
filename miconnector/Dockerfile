@@ -8,7 +8,7 @@ ENV MICONNECTOR4HASSIO_VERSION=1.0.0
 ENV ARCHIVE=miconnector-$MICONNECTOR4HASSIO_VERSION
 
 # apt-get Update & Install
-RUN apt-get update -y 
+RUN apt-get update
 RUN apt-get -y install --no-install-recommends curl jq golang-go wget npm
 
 # dockerpull create
