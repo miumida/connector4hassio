@@ -27,7 +27,7 @@ RUN apt-get install -y build-essential apt-utils iputils-ping git libcairo2-dev 
 
 RUN curl -sL https://deb.nodesource.com/setup_9.x | sudo bash
 
-RUN apt-get install-y  nodejs ccrypt
+RUN apt-get install -y nodejs ccrypt
 
 # delete temp file
 RUN apt-get clean -y
