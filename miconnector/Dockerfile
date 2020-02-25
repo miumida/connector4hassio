@@ -8,8 +8,8 @@ ENV MICONNECTOR4HASSIO_VERSION=1.0.0
 ENV ARCHIVE=miconnector-$MICONNECTOR4HASSIO_VERSION
 
 # apt-get Update & Install
-RUN apt-get update
-RUN apt-get -y install --no-install-recommends curl jq golang-go wget npm
+RUN apt-get update -y
+RUN apt-get install -y curl jq golang-go wget npm
 
 # dockerpull create
 RUN wget https://github.com/djjproject/android_over_linux/raw/master/aolothercommand/download-docker-image-rootfs.sh -O /usr/local/bin/dockerpull
@@ -27,7 +27,7 @@ RUN apt-get install -y build-essential apt-utils iputils-ping git libcairo2-dev 
 
 RUN curl -sL https://deb.nodesource.com/setup_9.x | sudo bash
 
-RUN apt-get -y install --no-install-recommends nodejs ccrypt
+RUN apt-get install-y  nodejs ccrypt
 
 # delete temp file
 RUN apt-get clean -y
