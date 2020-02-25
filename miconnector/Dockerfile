@@ -16,7 +16,7 @@ RUN wget https://github.com/djjproject/android_over_linux/raw/master/aolothercom
 
 RUN ["chmod", "a+x", "/usr/local/bin/dockerpull"]
 
-RUN dockerpull /opt/miconnector fison67/mi-connector-arm:latest
+RUN dockerpull /opt/miconnector fison67/mi-connector:latest
 
 # miconnector copy
 RUN mv /opt/miconnector/usr/src/app /home/miconnector && rm -rf /opt/miconnector
