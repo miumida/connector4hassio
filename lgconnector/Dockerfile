@@ -31,6 +31,10 @@ RUN curl -sL https://deb.nodesource.com/setup_9.x | sudo bash
 
 RUN apt-get install -y nodejs
 
+# delete temp file
+RUN apt-get clean -y
+RUN rm -rf /var/lib/apt/lists/*
+
 # config directory create
 RUN mkdir /home/lgconnector/config
 
