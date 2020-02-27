@@ -7,8 +7,7 @@ ENV LANG C.UTF-8
 ENV MICONNECTOR4HASSIO_VERSION=1.0.0
 ENV ARCHIVE=miconnector-$MICONNECTOR4HASSIO_VERSION
 
-# apt-get Update & Install
-#RUN apt-get update
+RUN apt-get update
 RUN apt-get install -y jq golang-go wget npm
 
 RUN apt-get install -y build-essential libudev-dev git gcc curl nano
