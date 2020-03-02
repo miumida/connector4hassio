@@ -1,0 +1,39 @@
+{
+  "name": "Lg-Connector-amd64",
+  "version": "1.0.0",
+  "slug": "lgconnectoramd64",
+  "description": "Lg-Connector for Hass.io",
+  "auto_uart": true,
+  "url": "https://github.com/miumida/connector4hassio",
+  "startup": "before",
+  "arch": [
+    "armhf",
+    "armv7",
+    "aarch64",
+    "amd64",
+    "i386"
+  ],
+  "boot": "auto",
+  "map": [
+    "share:rw",
+    "config:rw"
+  ],
+  "panel_icon": "mdi:alpha-m-box",
+  "webui": "http://[HOST]:[PORT:30020]",
+  "ports": {
+    "30020/tcp": 30020
+  },
+  "ports_description": {
+    "30020/tcp": "Web interface (Not required for Hass.io Ingress)"
+  },
+  "options": {
+    "data_path": "/share/lgconnectoramd64",
+    "homeassistant": true,
+    "permit_join": false
+  },
+  "schema": {
+    "data_path": "str",
+    "homeassistant": "bool",
+    "permit_join": "bool"
+  }
+}
