@@ -1,7 +1,7 @@
 {
-  "name": "Lg-Connector-amd64",
+  "name": "Lg-Connector",
   "version": "1.0.0",
-  "slug": "lgconnectoramd64",
+  "slug": "lgconnector",
   "description": "Lg-Connector for Hass.io",
   "auto_uart": true,
   "url": "https://github.com/miumida/connector4hassio",
