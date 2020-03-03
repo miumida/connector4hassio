@@ -41,12 +41,6 @@ WORKDIR "/home/ghconnector"
 
 RUN npm install
 
-ADD ./patch/castv2-player     /home/ghconnector/node_modules/castv2-player
-ADD ./patch/google-tts-api    /home/ghconnector/node_modules/google-tts-api
-ADD ./patch/google-assistant  /home/ghconnector/node_modules/google-assistant
- 
-RUN npm rebuild
-
 # docker port open 30010
 EXPOSE 30010
 
