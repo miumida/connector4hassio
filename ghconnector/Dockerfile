@@ -1,4 +1,3 @@
-ARG BUILD_FROM
 FROM ubuntu:latest
 
 # Add env
