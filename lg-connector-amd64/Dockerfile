@@ -11,7 +11,8 @@ COPY sources.list "/etc/apt/sources.list"
 # apt-get Update & Install
 RUN apt-get update -y
 RUN apt-get upgrade -y
-RUN apt-get install -y curl jq golang-go wget npm git gcc
+RUN apt-get install -y curl jq golang-go wget npm git
+RUN apt-get install -y gcc
 
 RUN apt-get install build-essential -y
 RUN apt-get install libudev-dev -y
