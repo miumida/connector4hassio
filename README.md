@@ -1,15 +1,17 @@
-# Hass.io Add-on: connector4hassio
+# Hass.io Add-on: GH-Connector 
 
 ![Supports armv7 Architecture][armv7-shield]
 
 ### About
-아기나무집님이 만드신 connector 프로그램을 애드온으로 만든 것입니다.
+아기나무집님이 만드신 gh-connector-rasp 프로그램을 애드온으로 만든 것입니다.
+
+개발중입니다:'D
 
 ### Version : 1.0.0(dev)
 
 ### Reference Site
-- 아기나무집님의 mi_connector github (https://github.com/fison67/mi_connector)
-- dockerhub의 fison67/mi-connector-arm (https://hub.docker.com/r/fison67/mi-connector-arm)
+- 아기나무집님의 GH-Connector github (https://github.com/fison67/GH-Connector)
+- dockerhub의 fison67/gh-connector-rasp (https://hub.docker.com/r/fison67/gh-connector-rasp)
 - DJJ PROJECT :: [IOT프로젝트] 2. mi-connector on AoL (https://blog.djjproject.com/608)<br>
 - DJJ PROJECT :: docker image rootfs 만들기 (https://blog.djjproject.com/626)<br>
 - android_over_linux : Configuration file repository (https://github.com/djjproject/android_over_linux)
