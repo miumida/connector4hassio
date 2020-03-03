@@ -1,9 +1,8 @@
 ARG BUILD_FROM
-FROM resin/rpi-raspbian:latest
+FROM ubuntu:latest
 
 # Add env
 ENV LANG C.UTF-8
-
 ENV GHCONNECTOR4HASSIO_VERSION=1.0.0
 ENV ARCHIVE=ghconnector-$GHCONNECTOR4HASSIO_VERSION
 
