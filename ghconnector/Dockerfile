@@ -9,11 +9,6 @@ ENV ARCHIVE=ghconnector-$GHCONNECTOR4HASSIO_VERSION
 # apt-get Update & Install
 RUN apt-get update -y
 RUN apt-get upgrade -y
-RUN apt-get install build-essential libudev-dev git gcc curl libavahi-compat-libdnssd-dev nano -y
-RUN apt-get install libavahi-compat-libdnssd-dev -y
-
-RUN curl -sL https://deb.nodesource.com/setup_10.x | bash -
-RUN apt-get install nodejs -y
 
 #docker image download
 RUN apt-get install -y curl jq golang-go wget npm
@@ -29,6 +24,13 @@ RUN dockerpull /opt/ghconnector fison67/gh-connector:0.0.2
 RUN mv /opt/ghconnector/usr/src/app /home/ghconnector
 RUN rm -rf /opt/ghconnector
 RUN cp /home/ghconnector/util/config.js /home/ghconnector/util/config_bak.js
+
+
+RUN apt-get install build-essential libudev-dev git gcc curl libavahi-compat-libdnssd-dev nano -y
+RUN apt-get install libavahi-compat-libdnssd-dev -y
+
+RUN curl -sL https://deb.nodesource.com/setup_10.x | bash -
+RUN apt-get install nodejs -y
 
 # config directory create
 RUN mkdir /home/ghconnector/config
