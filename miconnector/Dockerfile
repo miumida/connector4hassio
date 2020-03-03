@@ -1,5 +1,5 @@
 ARG BUILD_FROM
-FROM ubuntu:18.10
+FROM ubuntu:lastest
 
 # Add env
 ENV LANG C.UTF-8
