@@ -26,7 +26,7 @@ RUN rm -rf /opt/lgconnector
 RUN cp /home/lgconnector/util/config.js /home/lgconnector/util/config_bak.js
 RUN cp /home/lgconnector/util/log.js /home/lgconnector/util/log_bak.js
 
-RUN apt-get install build-essential libudev-dev git gcc curl libavahi-compat-libdnssd-dev -y
+RUN apt-get install build-essential libudev-dev git gcc libavahi-compat-libdnssd-dev -y
 
 RUN curl -sL https://deb.nodesource.com/setup_10.x -o /home/lgconnector/nodesource_setup.sh
 RUN apt-get install nodejs -y
