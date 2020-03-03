@@ -37,4 +37,4 @@ COPY lg-config.json /config
 RUN npm install
 
 
-CMD npm start
+#CMD npm start
