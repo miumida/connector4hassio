@@ -31,9 +31,6 @@ RUN apt-get install build-essential libudev-dev git gcc libavahi-compat-libdnssd
 RUN curl -sL https://deb.nodesource.com/setup_10.x -o /home/lgconnector/nodesource_setup.sh
 RUN apt-get install nodejs -y
 
-COPY bin /usr/src/app/bin
-COPY lg-config.json /config
-
 RUN npm install
 
 
