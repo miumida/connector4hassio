@@ -31,7 +31,16 @@ RUN apt-get install build-essential libudev-dev git gcc libavahi-compat-libdnssd
 RUN curl -sL https://deb.nodesource.com/setup_10.x -o /home/lgconnector/nodesource_setup.sh
 RUN apt-get install nodejs -y
 
+RUN rm -R /home/lgconnector/node_modules
+
+COPY run.sh "/home/lgconnector/run.sh"
+WORKDIR "/home/lgconnector"
+
 RUN npm install
 
+# docker port open 30020
+EXPOSE 30020
 
-#CMD npm start
+# Start app
+RUN ["chmod", "a+x", "/home/lgconnector/run.sh"]
+CMD [ "/home/lgconnector/run.sh" ]
