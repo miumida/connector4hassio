@@ -5,22 +5,22 @@
 
 ### About
 아기나무집님이 만드신 connector프로그램을 애드온으로 만든 것입니다.
-
+<br><br>
 ### Version : 1.0.0(dev)
 개발중입니다:'D
-
+<br><br>
 ### Connector
 - Mi-Connector
 - GH-Connector
 - Lg-Connector
 - Mi-Connector-arm
 - Lg-Connector-rasp
-
+<br><br>
 ### Installation
 1. Supervisor > ADD-ON STORE에서 Add new repository by URL에 'https://github.com/miumida/connector4hassio' 입력 후, "ADD" 버튼을 클릭하여 추가합니다.
 2. ADD-ON STORE 페이지 하단에서 "Mi-Connector" 클릭합니다.
 3. "INSTALL" 버튼을 누르면 애드온이 설치됩니다. 최대 약 20분 정도 소요.
-
+<br><br>
 ### Reference Site
 - 아기나무집님의 GH-Connector github (https://github.com/fison67/GH-Connector)
 - dockerhub의 fison67/gh-connector-rasp (https://hub.docker.com/r/fison67/gh-connector-rasp)
