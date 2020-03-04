@@ -17,9 +17,9 @@
 - Lg-Connector-rasp
 
 ### Installation
-1.
-2.
-3.
+1. Supervisor > ADD-ON STORE에서 Add new repository by URL에 'https://github.com/miumida/connector4hassio' 입력 후, "ADD" 버튼을 클릭하여 추가합니다.
+2. ADD-ON STORE 페이지 하단에서 "Mi-Connector" 클릭합니다.
+3. "INSTALL" 버튼을 누르면 애드온이 설치됩니다. 최대 약 20분 정도 소요.
 
 ### Reference Site
 - 아기나무집님의 GH-Connector github (https://github.com/fison67/GH-Connector)
