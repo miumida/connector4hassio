@@ -1,6 +1,7 @@
 # Hass.io Add-on: Mi-Connector 
 
 ![Supports amd64 Architecture][amd64-shield]
+![Version v1.0.0(beta)][version-shield]
 
 ### About
 아기나무집님이 만드신 mi-connector 프로그램을 애드온으로 만든 것입니다.
@@ -29,3 +30,4 @@
 [armhf-shield]: https://img.shields.io/badge/armhf-yes-green.svg
 [armv7-shield]: https://img.shields.io/badge/armv7-yes-green.svg
 [i386-shield]: https://img.shields.io/badge/i386-yes-green.svg
+[version-shield]: https://img.shields.io/badge/version-v1.0.0(beta)-orange.svg
