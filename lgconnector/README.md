@@ -5,11 +5,10 @@
 
 ### About
 아기나무집님이 만드신 lg-connector프로그램을 애드온으로 만든 것입니다.
-
-개발중입니다:'D
-
+<br><br>
 ### Version : 1.0.0(dev)
-
+개발중입니다:'D
+<br><br>
 ### Reference Site
 - 아기나무집님의 mi_connector github (https://github.com/fison67/mi_connector)
 - dockerhub의 fison67/lg-connector (https://hub.docker.com/r/fison67/lg-connector)
