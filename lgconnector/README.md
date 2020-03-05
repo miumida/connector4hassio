@@ -1,16 +1,16 @@
-# Hass.io Add-on: Lg-Connector 
+# Hass.io Add-on: LG-Connector 
 
 ![Supports amd64 Architecture][amd64-shield]
 ![Version v1.0.0(beta)][version-shield]
 
 ### About
-아기나무집님이 만드신 lg-connector프로그램을 애드온으로 만든 것입니다.
+아기나무집님이 만드신 LG-Connector프로그램을 애드온으로 만든 것입니다.
 <br><br>
 ### Version : 1.0.0(dev)
 개발중입니다:'D
 <br><br>
 ### Reference Site
-- 아기나무집님의 mi_connector github (https://github.com/fison67/mi_connector)
+- 아기나무집님의 LG-Connector github (https://github.com/fison67/LG-Connector)
 - dockerhub의 fison67/lg-connector (https://hub.docker.com/r/fison67/lg-connector)
 - DJJ PROJECT :: [IOT프로젝트] 2. mi-connector on AoL (https://blog.djjproject.com/608)<br>
 - DJJ PROJECT :: docker image rootfs 만들기 (https://blog.djjproject.com/626)<br>
