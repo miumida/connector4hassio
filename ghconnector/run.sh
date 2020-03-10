@@ -21,6 +21,11 @@ fi
 echo "[Info] ghconnector4hassio addons config.js editing"
 sed '10,22s|config/gh-config.json|config/ghconnector/gh-config.json|' util/config_bak.js > util/config.js
 
+# Change log.js
+echo "[Info] ghconnector4hassio addons log.js editing"
+sed '30s|config/gh-connector.log|config/ghconnector/gh-connector.log|' util/log_bak.js > util/log.js
+
+# Check
 if [[ -f $DATA_PATH/configuration.yaml ]]; then
     if [[ ! -f $DATA_PATH/.configuration.yaml.bk ]]; then
         echo "[Info] Configuration file found in data path, but no backup file found in data path. Backing up existing configuration to ${DATA_PATH}/.configuration.yaml.bk"
