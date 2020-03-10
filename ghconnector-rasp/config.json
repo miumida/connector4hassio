@@ -18,10 +18,10 @@
     "share:rw",
     "config:rw"
   ],
-  "panel_icon": "mdi:alpha-m-box",
+  "panel_icon": "mdi:alpha-g-box",
   "webui": "http://[HOST]:[PORT:30010]",
   "ports": {
-    "30000/tcp": 30010
+    "30010/tcp": 30010
   },
   "ports_description": {
     "30010/tcp": "Web interface (Not required for Hass.io Ingress)"
