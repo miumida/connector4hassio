@@ -18,7 +18,7 @@
     "share:rw",
     "config:rw"
   ],
-  "panel_icon": "mdi:alpha-m-box",
+  "panel_icon": "mdi:alpha-g-box",
   "webui": "http://[HOST]:[PORT:30010]",
   "ports": {
     "30010/tcp": 30010
