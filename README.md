@@ -10,11 +10,13 @@
 개발중입니다:'D
 <br><br>
 ### Connector
+#### amd64 base
 - Mi-Connector
 - GH-Connector
-- Lg-Connector
+- LG-Connector
+#### arm7 base
 - Mi-Connector-arm
-- Lg-Connector-rasp
+- LG-Connector-rasp
 <br><br>
 ### Installation
 1. Supervisor > ADD-ON STORE에서 Add new repository by URL에 'https://github.com/miumida/connector4hassio' 입력 후, "ADD" 버튼을 클릭하여 추가합니다.
