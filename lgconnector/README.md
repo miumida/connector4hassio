@@ -31,5 +31,5 @@
 [armv7-shield]: https://img.shields.io/badge/armv7-yes-green.svg
 [i386-shield]: https://img.shields.io/badge/i386-yes-green.svg
 
-[addon-shield]: https://img.shields.io/badge/addon-v1.0.0(beta)-orange.svg
-[lgconnector-shield]: https://img.shields.io/badge/lgconnector-v0.0.3-orange.svg
+[addon-shield]: https://img.shields.io/badge/addon-1.0.0(beta)-orange.svg
+[lgconnector-shield]: https://img.shields.io/badge/lgconnector-0.0.3-orange.svg
