@@ -19,7 +19,7 @@ fi
 
 # Change config.js
 echo "[Info] ghconnector4hassio addons config.js editing"
-sed '4s|config/gh-config.json|config/ghconnector/gh-config.json|' util/config_bak.js > util/config.js
+sed '10s|config/gh-config.json|config/ghconnector/gh-config.json|' util/config_bak.js > util/config.js
 
 if [[ -f $DATA_PATH/configuration.yaml ]]; then
     if [[ ! -f $DATA_PATH/.configuration.yaml.bk ]]; then
