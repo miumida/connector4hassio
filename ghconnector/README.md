@@ -6,9 +6,10 @@
 ### About
 아기나무집님이 만드신 gh-connector 프로그램을 애드온으로 만든 것입니다.
 
-개발중입니다:'D
+### Installation
 
 ### Version : 1.0.0(dev)
+개발중입니다:'D
 
 ### Reference Site
 - 아기나무집님의 GH-Connector github (https://github.com/fison67/GH-Connector)
