@@ -39,6 +39,9 @@ WORKDIR "/home/ghconnector"
 
 RUN npm install
 
+# docker volume setting
+VOLUME ["/music1", "/share/ghconnector/music"]
+
 # docker port open 30010
 EXPOSE 30010
 
