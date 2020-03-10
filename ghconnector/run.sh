@@ -12,6 +12,10 @@ echo "[Info] ghconnector4hassio addons Start Ready"
 mkdir -p $DATA_PATH
 mkdir -p /config/ghconnector
 
+# music1 volume directory create
+mkdir -p /share/ghconnector
+mkdir -p /share/ghconnecotr/music
+
 # Check gh-config.json file Not exists
 if [[ ! -f /config/ghconnector/gh-config.json ]]; then
     cp gh-config.json /config/ghconnector/gh-config.json
