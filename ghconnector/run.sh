@@ -12,7 +12,10 @@ echo "[Info] ghconnector4hassio addons Start Ready"
 mkdir -p $DATA_PATH
 mkdir -p /config/ghconnector
 
-cp gh-config.json /config/ghconnector/gh-config.json
+# Check gh-config.json file Not exists
+if [[ ! -f /config/ghconnector/gh-config.json ]]; then
+    cp gh-config.json /config/ghconnector/gh-config.json
+fi
 
 # Change config.js
 echo "[Info] ghconnector4hassio addons config.js editing"
