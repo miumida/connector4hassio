@@ -18,6 +18,10 @@
 개발중입니다:'D
 
 
+### mp3
+mp3는 share/ghconnector/music 경로로 저장해 놓으시면 mp3 파일을 가져옵니다.
+
+
 ### Reference Site
 - 아기나무집님의 GH-Connector github (https://github.com/fison67/GH-Connector)
 - dockerhub의 fison67/gh-connector-rasp (https://hub.docker.com/r/fison67/gh-connector-rasp)
