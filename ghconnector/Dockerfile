@@ -24,6 +24,7 @@ RUN mv /opt/ghconnector/usr/src/app /home/ghconnector
 RUN rm -rf /opt/ghconnector
 RUN cp /home/ghconnector/util/config.js /home/ghconnector/util/config_bak.js
 RUN cp /home/ghconnector/util/log.js /home/ghconnector/util/log_bak.js
+RUN cp /home/ghconnector/service/mp3.js /home/ghconnector/service/mp3_bak.js
 
 
 RUN apt-get install build-essential libudev-dev git gcc curl libavahi-compat-libdnssd-dev nano -y
