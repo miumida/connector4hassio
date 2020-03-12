@@ -5,6 +5,7 @@
   "description": "Mi-Connector for Hass.io",
   "auto_uart": true,
   "url": "https://github.com/miumida/connector4hassio",
+  "host_network":true,
   "startup": "before",
   "arch": [
     "armhf",
