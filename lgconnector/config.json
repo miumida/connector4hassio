@@ -8,11 +8,7 @@
   "host_network":true,
   "startup": "before",
   "arch": [
-    "armhf",
-    "armv7",
-    "aarch64",
-    "amd64",
-    "i386"
+    "amd64"
   ],
   "boot": "auto",
   "map": [
