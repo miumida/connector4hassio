@@ -5,13 +5,10 @@
   "description": "Lg-Connector-rasp for Hass.io",
   "auto_uart": true,
   "url": "https://github.com/miumida/connector4hassio",
+  "host_network":true,
   "startup": "before",
   "arch": [
-    "armhf",
-    "armv7",
-    "aarch64",
-    "amd64",
-    "i386"
+    "armv7"
   ],
   "boot": "auto",
   "map": [
