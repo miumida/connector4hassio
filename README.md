@@ -9,7 +9,7 @@
 ### Version : 1.0.0(dev)
 개발중입니다:'D
 <br><br>
-### Connector
+### Support Connector List
 #### amd64 base
 - Mi-Connector
 - GH-Connector
