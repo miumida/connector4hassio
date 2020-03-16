@@ -16,7 +16,7 @@ RUN wget https://github.com/miumida/connector4hassio/blob/master/util/download-d
 
 RUN ["chmod", "a+x", "/usr/local/bin/dockerpull"]
 
-RUN dockerpull /opt/miconnector fison67/mi-connector-arm:latest
+RUN dockerpull /opt/miconnector fison67/mi-connector-arm:0.0.5
 
 # miconnector copy
 RUN mv /opt/miconnector/usr/src/app /home/miconnector && rm -rf /opt/miconnector
