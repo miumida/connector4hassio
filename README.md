@@ -3,6 +3,10 @@
 ![Supports armv7 Architecture][armv7-shield]
 ![Supports amd64 Architecture][amd64-shield]
 
+![miconnector][miconnector-shield]
+![lgconnector][lgconnector-shield]
+![ghconnector][ghconnector-shield]
+
 ### About
 아기나무집님이 만드신 connector프로그램을 애드온으로 만든 것입니다.
 <br><br>
@@ -38,3 +42,7 @@
 [armhf-shield]: https://img.shields.io/badge/armhf-yes-green.svg
 [armv7-shield]: https://img.shields.io/badge/armv7-yes-green.svg
 [i386-shield]: https://img.shields.io/badge/i386-yes-green.svg
+
+[miconnector-shield]: https://img.shields.io/badge/miconnector-0.0.5-orange.svg
+[lgconnector-shield]: https://img.shields.io/badge/lgconnector-0.0.3-orange.svg
+[ghconnector-shield]: https://img.shields.io/badge/ghconnector-0.0.2-orange.svg
