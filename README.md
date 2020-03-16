@@ -9,9 +9,11 @@
 ### About
 아기나무집님이 만드신 connector프로그램을 애드온으로 만든 것입니다.
 <br><br>
+
 ### Version : 1.0.0(dev)
 개발중입니다:'D
 <br><br>
+
 ### Support Connector List(version)
 #### amd64 base
 - Mi-Connector:0.0.5
@@ -21,13 +23,17 @@
 - Mi-Connector-arm:0.0.5
 - LG-Connector-rasp:0.0.3
 <br><br>
+
 ### Installation
 1. Supervisor > ADD-ON STORE에서 Add new repository by URL에 'https://github.com/miumida/connector4hassio' 입력 후, "ADD" 버튼을 클릭하여 추가합니다.
-2. ADD-ON STORE 페이지 하단에서 "Mi-Connector" 클릭합니다.
-3. "INSTALL" 버튼을 누르면 애드온이 설치됩니다. 최대 약 20분 정도 소요.
+2. ADD-ON STORE 페이지 하단에서 필요한 connector를 확인하고, 클릭합니다.
+3. "INSTALL" 버튼을 누르면 애드온이 설치됩니다. 최대 약 20~40분 정도 소요.
 <br><br>
+
 ### Reference Site
-- 아기나무집님의 GH-Connector github (https://github.com/fison67/GH-Connector)
+- 아기나무집님의 mi_connector github (<https://github.com/fison67/mi_connector>)
+- 아기나무집님의 GH-Connector github (<https://github.com/fison67/GH-Connector>)
+- 아기나무집님의 LG-Connector github (<https://github.com/fison67/LG-Connector>)
 - dockerhub의 fison67/gh-connector-rasp (https://hub.docker.com/r/fison67/gh-connector-rasp)
 - DJJ PROJECT :: [IOT프로젝트] 2. mi-connector on AoL (https://blog.djjproject.com/608)<br>
 - DJJ PROJECT :: docker image rootfs 만들기 (https://blog.djjproject.com/626)<br>
