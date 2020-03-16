@@ -19,8 +19,8 @@
 <br><br>
 
 ### Reference Site
-- 아기나무집님의 mi_connector github (https://github.com/fison67/mi_connector)
-- dockerhub의 fison67/mi-connector-arm (https://hub.docker.com/r/fison67/mi-connector-arm)
+- 아기나무집님의 LG-Connector github (<https://github.com/fison67/LG-Connector>)
+- dockerhub의 fison67/lg-connector-rasp (<https://hub.docker.com/r/fison67/lg-connector-rasp>)
 - DJJ PROJECT :: [IOT프로젝트] 2. mi-connector on AoL (https://blog.djjproject.com/608)<br>
 - DJJ PROJECT :: docker image rootfs 만들기 (https://blog.djjproject.com/626)<br>
 - android_over_linux : Configuration file repository (https://github.com/djjproject/android_over_linux)
