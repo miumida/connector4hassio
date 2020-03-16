@@ -1,6 +1,8 @@
 # Hass.io Add-on: Lg-Connector 
 
 ![Supports armv7 Architecture][armv7-shield]
+![Version v1.0.0(beta)][addon-shield]
+![lgconnector][lgconnector-shield]
 
 ### About
 아기나무집님이 만드신 lg-connector-rasp 프로그램을 애드온으로 만든 것입니다.
@@ -25,3 +27,6 @@
 [armhf-shield]: https://img.shields.io/badge/armhf-yes-green.svg
 [armv7-shield]: https://img.shields.io/badge/armv7-yes-green.svg
 [i386-shield]: https://img.shields.io/badge/i386-yes-green.svg
+
+[addon-shield]: https://img.shields.io/badge/addon-1.0.0(beta)-orange.svg
+[lgconnector-shield]: https://img.shields.io/badge/lgconnector-0.0.3-orange.svg
