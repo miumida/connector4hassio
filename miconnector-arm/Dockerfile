@@ -12,7 +12,7 @@ RUN apt-get update -y
 RUN apt-get install -y curl jq golang-go wget npm
 
 # dockerpull create
-RUN wget https://github.com/djjproject/android_over_linux/raw/master/aolothercommand/download-docker-image-rootfs.sh -O /usr/local/bin/dockerpull
+RUN wget https://github.com/miumida/connector4hassio/blob/master/util/download-docker-image-rootfs.sh -O /usr/local/bin/dockerpull
 
 RUN ["chmod", "a+x", "/usr/local/bin/dockerpull"]
 
