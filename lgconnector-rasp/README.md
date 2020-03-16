@@ -12,6 +12,12 @@
 개발중입니다:'D
 <br><br>
 
+### Installation
+1. Supervisor > ADD-ON STORE에서 Add new repository by URL에 'https://github.com/miumida/connector4hassio' 입력 후, "ADD" 버튼을 클릭하여 추가합니다.
+2. ADD-ON STORE 페이지 하단에서 "LG-Connector-rasp" 클릭합니다.
+3. "INSTALL" 버튼을 누르면 애드온이 설치됩니다. 최대 약 40분 정도 소요.
+<br><br>
+
 ### Reference Site
 - 아기나무집님의 mi_connector github (https://github.com/fison67/mi_connector)
 - dockerhub의 fison67/mi-connector-arm (https://hub.docker.com/r/fison67/mi-connector-arm)
