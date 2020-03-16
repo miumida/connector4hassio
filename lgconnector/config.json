@@ -16,7 +16,6 @@
     "config:rw"
   ],
   "panel_icon": "mdi:alpha-l-box",
-  "ingress": true,
   "webui": "http://[HOST]:[PORT:30020]",
   "ports": {
     "30020/tcp": 30020
