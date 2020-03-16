@@ -33,9 +33,6 @@ RUN apt-get install -y nodejs ccrypt
 RUN apt-get clean -y
 RUN rm -rf /var/lib/apt/lists/*
 
-# config directory create
-RUN mkdir /home/miconnector/config
-
 RUN rm -R /home/miconnector/node_modules
 
 COPY run.sh "/home/miconnector/run.sh"
