@@ -15,7 +15,8 @@
     "share:rw",
     "config:rw"
   ],
-  "panel_icon": "mdi:alpha-m-box",
+  "panel_icon": "mdi:alpha-l-box",
+  "ingress": true,
   "webui": "http://[HOST]:[PORT:30020]",
   "ports": {
     "30020/tcp": 30020
@@ -24,7 +25,7 @@
     "30020/tcp": "Web interface (Not required for Hass.io Ingress)"
   },
   "options": {
-    "data_path": "/share/lgconnectoramd64",
+    "data_path": "/share/lgconnector",
     "homeassistant": true,
     "permit_join": false
   },
