@@ -19,7 +19,7 @@
 <br><br>
 
 ### mp3
-mp3는 share/ghconnector/music 경로로 저장해 놓으시면 mp3 파일을 가져옵니다.
+mp3는 /share/ghconnector/music 경로로 저장해 놓으시면 mp3 파일을 가져옵니다.
 <br><br>
 
 ### Reference Site
