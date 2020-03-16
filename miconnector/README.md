@@ -8,7 +8,7 @@
 아기나무집님이 만드신 mi-connector 프로그램을 애드온으로 만든 것입니다.
 <br><br>
 
-### Version : 1.0.0(beta)
+### Version : 1.0.0(dev)
 개발중입니다:'D
 <br><br>
 
@@ -35,6 +35,6 @@
 [i386-shield]: https://img.shields.io/badge/i386-yes-green.svg
 
 [version-shield]: https://img.shields.io/badge/version-1.0.0(beta)-orange.svg
-[addon-shield]: https://img.shields.io/badge/addon-1.0.0(beta)-orange.svg
+[addon-shield]: https://img.shields.io/badge/addon-1.0.0(dev)-orange.svg
 [miconnector-shield]: https://img.shields.io/badge/miconnector-0.0.5-orange.svg
 
