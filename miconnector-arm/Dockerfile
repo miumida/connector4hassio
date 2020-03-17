@@ -41,7 +41,7 @@ WORKDIR "/home/miconnector"
 RUN npm install
 
 # docker port open 30000
-EXPOSE 30000
+EXPOSE 30000 30001
 
 # Start app
 RUN ["chmod", "a+x", "/home/miconnector/run.sh"]
