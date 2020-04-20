@@ -17,7 +17,7 @@ RUN wget https://raw.githubusercontent.com/miumida/connector4hassio/master/util/
 
 RUN ["chmod", "a+x", "/usr/local/bin/dockerpull"]
 
-RUN dockerpull /opt/ghconnector fison67/gh-connector:0.0.2
+RUN dockerpull /opt/ghconnector fison67/gh-connector:0.0.3
 
 # ghconnector copy
 RUN mv /opt/ghconnector/usr/src/app /home/ghconnector
