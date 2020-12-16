@@ -1,0 +1,36 @@
+{
+  "name": "Gh-Connector",
+  "version": "1.0.0",
+  "slug": "ghconnector",
+  "description": "Gh-Connector for Hass.io",
+  "auto_uart": true,
+  "url": "https://github.com/miumida/connector4hassio",
+  "host_network":true,
+  "startup": "before",
+  "arch": [
+    "amd64"
+  ],
+  "boot": "auto",
+  "map": [
+    "share:rw",
+    "config:rw"
+  ],
+  "panel_icon": "mdi:alpha-g-box",
+  "webui": "http://[HOST]:[PORT:30010]",
+  "ports": {
+    "30010/tcp": 30010
+  },
+  "ports_description": {
+    "30010/tcp": "Web interface (Not required for Hass.io Ingress)"
+  },
+  "options": {
+    "data_path": "/share/ghconnector",
+    "homeassistant": true,
+    "permit_join": false
+  },
+  "schema": {
+    "data_path": "str",
+    "homeassistant": "bool",
+    "permit_join": "bool"
+  }
+}
