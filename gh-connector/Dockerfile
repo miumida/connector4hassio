@@ -4,7 +4,7 @@ WORKDIR /usr/src/app
 
 COPY run.sh "/usr/src/app/run.sh"
 
-RUN mkdir -p ghconnector
+RUN mkdir -p /config/ghconnector
 
 #RUN sed '30s|config/gh-connector.log|config/ghconnector/gh-connector.log|' util/log.js > util/log.js
 
