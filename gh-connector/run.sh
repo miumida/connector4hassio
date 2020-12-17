@@ -1,1 +1,1 @@
-/bin/sh -c npm start
+npm start
