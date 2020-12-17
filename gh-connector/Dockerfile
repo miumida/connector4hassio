@@ -6,7 +6,7 @@ COPY run.sh "/usr/src/app/run.sh"
 
 RUN mkdir -p ghconnector
 
-RUN sed '30s|config/gh-connector.log|config/ghconnector/gh-connector.log|' util/log.js > util/log.js
+#RUN sed '30s|config/gh-connector.log|config/ghconnector/gh-connector.log|' util/log.js > util/log.js
 
 # docker port open 30010
 EXPOSE 30010
