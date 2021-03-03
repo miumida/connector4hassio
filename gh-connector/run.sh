@@ -4,13 +4,13 @@ mkdir -p /share/gh-connector
 mkdir -p /share/gh-connector/music
 
 # Check gh-config.json file Not exists
-#if [[ ! -f /config/gh-connector/gh-config.json ]]; then
-#    cp gh-config.json /config/gh-connector/gh-config.json
-#fi
+if [[ ! -f /config/gh-connector/gh-config.json ]]; then
+    cp gh-config.json /config/gh-connector/gh-config.json
+fi
 
 # Change util/config.js
-#echo "[Info] ghconnector4hassio addons config.js editing"
-#sed '10,22s|config/gh-config.json|config/ghconnector/gh-config.json|' util/config_bak.js > util/config.js
+echo "[Info] GH-Connector addons log.js editing"
+sed -i '10,22s|config/gh-config.json|config/gh-connector/gh-config.json|' util/config.js
 
 # Edit util/log.js
 echo "[Info] GH-Connector addons log.js editing"
