@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "slug": "lgconnector",
   "description": "Lg-Connector for Hass.io",
-  "auto_uart": true,
+  "uart": true,
   "url": "https://github.com/miumida/connector4hassio",
   "host_network":true,
-  "startup": "before",
+  "before": "before",
   "arch": [
     "amd64"
   ],
@@ -25,12 +25,10 @@
   },
   "options": {
     "data_path": "/share/lgconnector",
-    "homeassistant": true,
-    "permit_join": false
+    "homeassistant": true
   },
   "schema": {
     "data_path": "str",
-    "homeassistant": "bool",
-    "permit_join": "bool"
+    "homeassistant": "bool"
   }
 }
