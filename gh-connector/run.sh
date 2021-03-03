@@ -23,9 +23,9 @@ mkdir -p /share/gh-connector
 #echo "[Info] ghconnector4hassio addons config.js editing"
 #sed '10,22s|config/gh-config.json|config/ghconnector/gh-config.json|' util/config_bak.js > util/config.js
 
-# Change util/log.js
-#echo "[Info] ghconnector4hassio addons log.js editing"
-#sed '30s|config/gh-connector.log|config/ghconnector/gh-connector.log|' util/log_bak.js > util/log.js
+# Edit util/log.js
+echo "[Info] GH-Connector addons log.js editing"
+sed '30s|config/gh-connector.log|config/gh-connector/gh-connector.log|' util/log.js
 
 # Change sevice/mp3.js
 #echo "[Info] ghconnector4hassio addons log.js editing"
