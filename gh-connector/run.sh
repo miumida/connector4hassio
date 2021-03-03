@@ -7,12 +7,11 @@ echo "[Info] Welcom to GH-Connector addon!"
 #DATA_PATH=$(jq --raw-output ".data_path" $CONFIG_PATH)
 
 # Check if config exists already
-#mkdir -p $DATA_PATH
 mkdir -p /config/gh-connector
 
 # music1 volume directory create
 mkdir -p /share/gh-connector
-#mkdir -p /share/ghconnector/music
+#mkdir -p /share/gh-connector/music
 
 # Check gh-config.json file Not exists
 #if [[ ! -f /config/ghconnector/gh-config.json ]]; then
@@ -25,7 +24,7 @@ mkdir -p /share/gh-connector
 
 # Edit util/log.js
 echo "[Info] GH-Connector addons log.js editing"
-sed '30s|config/gh-connector.log|config/gh-connector/gh-connector.log|' util/log.js
+sed '30s|config/gh-connector.log|config/gh-connector/gh-connector.log|' util/log.js > util/log.js
 
 # Change sevice/mp3.js
 #echo "[Info] ghconnector4hassio addons log.js editing"
