@@ -12,6 +12,12 @@
 개발중입니다:'D
 <br><br>
 
+### Mount
+|gh-connector|addon|
+|--|--|
+| /config | /config
+| /music1 | /share/gh-connector/music |
+
 ### Reference Site
 - 아기나무집님의 GH-Connector github (https://github.com/fison67/GH-Connector)
 - dockerhub의 fison67/gh-connector-rasp (https://hub.docker.com/r/fison67/gh-connector-rasp)
