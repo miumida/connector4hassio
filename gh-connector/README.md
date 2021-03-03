@@ -10,13 +10,17 @@
 
 ### Version : 1.0.0(dev)
 개발중입니다:'D
-<br><br>
 
 ### Mount
 |gh-connector|addon|
 |--|--|
 | /config | /config
 | /music1 | /share/gh-connector/music |
+
+### Log Path
+|gh-connector|addon|
+|--|--|
+| /config/gh-connector.log | /config/gh-connector/gh-connector.log |
 
 ### Reference Site
 - 아기나무집님의 GH-Connector github (https://github.com/fison67/GH-Connector)
