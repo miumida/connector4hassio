@@ -6,7 +6,7 @@
   "uart": true,
   "url": "https://github.com/miumida/connector4hassio",
   "host_network":true,
-  "before": "before",
+  "startup": "services",
   "arch": [
     "amd64",
     "armv7"
