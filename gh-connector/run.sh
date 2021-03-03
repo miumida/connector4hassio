@@ -34,7 +34,5 @@ sed '30s|config/gh-connector.log|config/gh-connector/gh-connector.log|' util/log
 # Parse config
 #cat "$CONFIG_PATH" | jq 'del(.data_path)' > $DATA_PATH/configuration.yaml
 
-echo "[Info] Start GH-Connector:D"
-
 # start ghconnector
 npm start
