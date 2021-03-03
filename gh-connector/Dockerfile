@@ -1,4 +1,4 @@
-FROM fison67/gh-connector:0.0.4
+FROM fison67/gh-connector:0.0.5
 
 WORKDIR /usr/src/app
 
