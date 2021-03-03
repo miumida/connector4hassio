@@ -8,7 +8,8 @@
   "host_network":true,
   "startup": "before",
   "arch": [
-    "amd64"
+    "amd64",
+    "armv7"
   ],
   "boot": "auto",
   "map": [
