@@ -16,7 +16,7 @@ RUN wget https://raw.githubusercontent.com/miumida/connector4hassio/master/util/
 
 RUN ["chmod", "a+x", "/usr/local/bin/dockerpull"]
 
-RUN dockerpull /opt/lgconnector fison67/lg-connector-rasp:0.0.3
+RUN dockerpull /opt/lgconnector fison67/lg-connector-rasp:0.0.4
 
 # lgconnector copy
 RUN mv /opt/lgconnector/usr/src/app /home/lgconnector
