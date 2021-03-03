@@ -13,11 +13,12 @@ mkdir -p /share/gh-connector/music
 #sed '10,22s|config/gh-config.json|config/ghconnector/gh-config.json|' util/config_bak.js > util/config.js
 
 # Edit util/log.js
+echo "[Info] GH-Connector addons log.js editing"
 sed -i '30s|config/gh-connector.log|config/gh-connector/gh-connector.log|' util/log.js
 
 # Change sevice/mp3.js
-#echo "[Info] ghconnector4hassio addons log.js editing"
-#sed '17s|/music1|/share/ghconnector/music|' service/mp3_bak.js > service/mp3.js
+echo "[Info] GH-Connector addons mp3.js editing"
+sed -i '17s|/music1|/share/gh-connector/music|' service/mp3.js
 
 # Check
 #if [[ -f $DATA_PATH/configuration.yaml ]]; then
