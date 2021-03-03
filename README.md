@@ -15,9 +15,10 @@
 <br><br>
 
 ### Support Connector List(version)
+#### GH-Connector:0.0.5
+- amd64 / arm7 
 #### amd64 base
 - Mi-Connector:0.0.5
-- GH-Connector:0.0.5
 - LG-Connector:0.0.3
 #### arm7 base
 - Mi-Connector-arm:0.0.5
