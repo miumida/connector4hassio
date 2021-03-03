@@ -1,7 +1,7 @@
 {
-  "name": "Gh-Connector New",
+  "name": "Gh-Connector",
   "version": "1.0.0",
-  "slug": "ghconnector_new",
+  "slug": "ghconnector",
   "description": "Gh-Connector for Hass.io",
   "uart": true,
   "url": "https://github.com/miumida/connector4hassio",
