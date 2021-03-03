@@ -20,9 +20,10 @@
 | /config | /config
 | /music1 | /share/gh-connector/music |
 
-### Log Path
+### Changed File Path
 |gh-connector|addon|
 |--|--|
+| /config/gh-config.json | /config/gh-connector/gh-config.json |
 | /config/gh-connector.log | /config/gh-connector/gh-connector.log |
 
 ### Reference Site
