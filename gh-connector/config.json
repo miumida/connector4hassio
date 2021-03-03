@@ -12,9 +12,6 @@
     "armv7"
   ],
   "boot": "auto",
-  "ingress": true,
-  "ingress_port": 30010,
-  "ingress_entry": "app.js",
   "map": [
     "share:rw",
     "config:rw"
