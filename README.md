@@ -17,7 +17,7 @@
 ### Support Connector List(version)
 #### amd64 base
 - Mi-Connector:0.0.5
-- GH-Connector:0.0.2
+- GH-Connector:0.0.5
 - LG-Connector:0.0.3
 #### arm7 base
 - Mi-Connector-arm:0.0.5
@@ -31,17 +31,15 @@
 <br><br>
 
 ### Reference Site
-- 아기나무집님의 mi_connector github (<https://github.com/fison67/mi_connector>)
 - 아기나무집님의 GH-Connector github (<https://github.com/fison67/GH-Connector>)
+- 아기나무집님의 mi_connector github (<https://github.com/fison67/mi_connector>)
 - 아기나무집님의 LG-Connector github (<https://github.com/fison67/LG-Connector>)
+- dockerhub의 fison67/gh-connector (<https://hub.docker.com/r/fison67/gh-connector>)
 - dockerhub의 fison67/mi-connector (<https://hub.docker.com/r/fison67/mi-connector>)
 - dockerhub의 fison67/mi-connector-arm (<https://hub.docker.com/r/fison67/mi-connector-arm>)
 - dockerhub의 fison67/lg-connector (<https://hub.docker.com/r/fison67/lg-connector>)
 - dockerhub의 fison67/lg-connector-rasp (<https://hub.docker.com/r/fison67/lg-connector-rasp>)
-- dockerhub의 fison67/gh-connector-rasp (<https://hub.docker.com/r/fison67/gh-connector-rasp>)
-- DJJ PROJECT :: [IOT프로젝트] 2. mi-connector on AoL (https://blog.djjproject.com/608)<br>
-- DJJ PROJECT :: docker image rootfs 만들기 (https://blog.djjproject.com/626)<br>
-- android_over_linux : Configuration file repository (https://github.com/djjproject/android_over_linux)
+
 
 [forum]: https://cafe.naver.com/koreassistant
 [github]: https://github.com/HAKorea/addons
@@ -54,4 +52,4 @@
 
 [miconnector-shield]: https://img.shields.io/badge/miconnector-0.0.5-orange.svg
 [lgconnector-shield]: https://img.shields.io/badge/lgconnector-0.0.3-orange.svg
-[ghconnector-shield]: https://img.shields.io/badge/ghconnector-0.0.2-orange.svg
+[ghconnector-shield]: https://img.shields.io/badge/ghconnector-0.0.5-orange.svg
