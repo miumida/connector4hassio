@@ -1,4 +1,4 @@
-FROM fison67/lg-connector:0.0.5
+FROM fison67/lg-connector:0.0.4
 
 WORKDIR /usr/src/app
 
