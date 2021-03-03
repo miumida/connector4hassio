@@ -12,6 +12,7 @@
     "armv7"
   ],
   "boot": "auto",
+  "ingress": true,
   "map": [
     "share:rw",
     "config:rw"
