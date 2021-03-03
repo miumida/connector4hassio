@@ -13,6 +13,7 @@
   ],
   "boot": "auto",
   "ingress": true,
+  "ingress_port": 30010,
   "map": [
     "share:rw",
     "config:rw"
