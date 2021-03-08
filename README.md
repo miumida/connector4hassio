@@ -17,16 +17,15 @@
 ### Support Connector List(version)
 #### GH-Connector:0.0.5
 - amd64 / arm7 
-#### amd64 base
-- Mi-Connector:0.0.5
-- LG-Connector:0.0.3
-#### arm7 base
-- Mi-Connector-arm:0.0.5
-- LG-Connector-rasp:0.0.3
+#### LG-Connector:0.0.5
+- amd64 / arm7 
+#### Mi-Connector:0.0.5
+- amd64: mi-connector:0.0.5
+- arm7 : mi-connector-arm:0.0.5
 <br><br>
 
 ### Installation
-1. Supervisor > ADD-ON STORE에서 Add new repository by URL에 'https://github.com/miumida/connector4hassio' 입력 후, "ADD" 버튼을 클릭하여 추가합니다.
+1. Supervisor > ADD-ON STORE에서 Add new repository by URL에 '<https://github.com/miumida/connector4hassio>' 입력 후, "ADD" 버튼을 클릭하여 추가합니다.
 2. ADD-ON STORE 페이지 하단에서 필요한 connector를 확인하고, 클릭합니다.
 3. "INSTALL" 버튼을 누르면 애드온이 설치됩니다. 최대 약 20~40분 정도 소요.
 <br><br>
@@ -37,9 +36,8 @@
 - 아기나무집님의 LG-Connector github (<https://github.com/fison67/LG-Connector>)
 - dockerhub의 fison67/gh-connector (<https://hub.docker.com/r/fison67/gh-connector>)
 - dockerhub의 fison67/mi-connector (<https://hub.docker.com/r/fison67/mi-connector>)
-- dockerhub의 fison67/mi-connector-arm (<https://hub.docker.com/r/fison67/mi-connector-arm>)
 - dockerhub의 fison67/lg-connector (<https://hub.docker.com/r/fison67/lg-connector>)
-- dockerhub의 fison67/lg-connector-rasp (<https://hub.docker.com/r/fison67/lg-connector-rasp>)
+- dockerhub의 fison67/mi-connector-arm (<https://hub.docker.com/r/fison67/mi-connector-arm>)
 
 
 [forum]: https://cafe.naver.com/koreassistant
@@ -52,5 +50,5 @@
 [i386-shield]: https://img.shields.io/badge/i386-yes-green.svg
 
 [miconnector-shield]: https://img.shields.io/badge/miconnector-0.0.5-orange.svg
-[lgconnector-shield]: https://img.shields.io/badge/lgconnector-0.0.3-orange.svg
+[lgconnector-shield]: https://img.shields.io/badge/lgconnector-0.0.5-orange.svg
 [ghconnector-shield]: https://img.shields.io/badge/ghconnector-0.0.5-orange.svg
