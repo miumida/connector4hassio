@@ -25,7 +25,7 @@
     "30000/tcp": "Web interface (Not required for Hass.io Ingress)"
   },
   "options": {
-    "data_path": "/share/lg-connector",
+    "data_path": "/share/mi-connector",
     "homeassistant": true
   },
   "schema": {
