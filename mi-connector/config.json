@@ -1,7 +1,7 @@
 {
-  "name": "Mi-Connector",
+  "name": "Mi-Connector New",
   "version": "1.0.0",
-  "slug": "miconnector",
+  "slug": "miconnector_n",
   "description": "Mi-Connector for Hass.io",
   "uart": true,
   "url": "https://github.com/miumida/connector4hassio",
