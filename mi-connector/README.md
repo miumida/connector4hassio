@@ -1,6 +1,7 @@
 # Hass.io Add-on: Mi-Connector 
 
 ![Supports amd64 Architecture][amd64-shield]
+![Supports armv7 Architecture][armv7-shield]
 ![Version v1.0.0(beta)][addon-shield]
 ![miconnector][miconnector-shield]
 
@@ -11,6 +12,17 @@
 ### Version : 1.0.0(dev)
 개발중입니다:'D
 <br><br>
+
+### Mount
+|mi-connector|addon|
+|--|--|
+| /config | /config
+
+### Changed File Path
+|mi-connector|addon|
+|--|--|
+| /config/config.json | /config/mi-connector/config.json |
+| /config/connector.log | /config/mi-connector/connector.log |
 
 ### Installation
 1. Supervisor > ADD-ON STORE에서 Add new repository by URL에 '<https://github.com/miumida/connector4hassio>' 입력 후, "ADD" 버튼을 클릭하여 추가합니다.
