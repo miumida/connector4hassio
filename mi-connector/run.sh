@@ -2,22 +2,18 @@
 mkdir -p /config/mi-connector
 mkdir -p /share/mi-connector
 
-# Check gh-config.json file Not exists
-#if [[ ! -f /config/gh-connector/mi-config.json ]]; then
-#    cp mi-config.json /config/mi-connector/mi-config.json
-#fi
+# Check config.json file Not exists
+if [[ ! -f /config/mi-connector/config.json ]]; then
+    cp config.json /config/mi-connector/config.json
+fi
 
 # Change util/config.js
-#echo "[Info] GH-Connector addons log.js editing"
+#echo "[Info] Mi-Connector addons log.js editing"
 #sed -i '10,22s|config/gh-config.json|config/gh-connector/gh-config.json|' util/config.js
 
 # Edit util/log.js
-#echo "[Info] GH-Connector addons log.js editing"
-#sed -i '30s|config/gh-connector.log|config/gh-connector/gh-connector.log|' util/log.js
-
-# Change sevice/mp3.js
-#echo "[Info] GH-Connector addons mp3.js editing"
-#sed -i '17s|/music1|/share/gh-connector/music|' service/mp3.js
+echo "[Info] Mi-Connector addons log.js editing"
+sed -i '42s|config/connector.log|config/mi-connector/connector.log|' util/log.js
 
 # Check
 #if [[ -f $DATA_PATH/configuration.yaml ]]; then
