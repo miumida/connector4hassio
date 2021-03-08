@@ -8,8 +8,8 @@ if [[ ! -f /config/mi-connector/config.json ]]; then
 fi
 
 # Change util/config.js
-#echo "[Info] Mi-Connector addons log.js editing"
-#sed -i '10,22s|config/gh-config.json|config/gh-connector/gh-config.json|' util/config.js
+echo "[Info] Mi-Connector addons log.js editing"
+sed -i '4,12s|config/config.json|config/mi-connector/config.json|' util/config.js
 
 # Edit util/log.js
 echo "[Info] Mi-Connector addons log.js editing"
