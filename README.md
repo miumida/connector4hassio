@@ -36,7 +36,6 @@
 - dockerhub의 fison67/gh-connector (<https://hub.docker.com/r/fison67/gh-connector>)
 - dockerhub의 fison67/mi-connector (<https://hub.docker.com/r/fison67/mi-connector>)
 - dockerhub의 fison67/lg-connector (<https://hub.docker.com/r/fison67/lg-connector>)
-- dockerhub의 fison67/mi-connector-arm (<https://hub.docker.com/r/fison67/mi-connector-arm>)
 
 
 [forum]: https://cafe.naver.com/koreassistant
