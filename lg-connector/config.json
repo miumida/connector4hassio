@@ -1,7 +1,7 @@
 {
-  "name": "LG-Connector New",
+  "name": "LG-Connector",
   "version": "1.0.0",
-  "slug": "lgconnector_new",
+  "slug": "lgconnector",
   "description": "LG-Connector for Hass.io",
   "uart": true,
   "url": "https://github.com/miumida/connector4hassio",
