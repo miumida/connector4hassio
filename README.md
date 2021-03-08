@@ -19,9 +19,8 @@
 - amd64 / arm7 
 #### LG-Connector:0.0.5
 - amd64 / arm7 
-#### Mi-Connector:0.0.5
-- amd64: mi-connector:0.0.5
-- arm7 : mi-connector-arm:0.0.5
+#### Mi-Connector:0.0.6
+- amd64 / arm7 
 <br><br>
 
 ### Installation
@@ -49,6 +48,6 @@
 [armv7-shield]: https://img.shields.io/badge/armv7-yes-green.svg
 [i386-shield]: https://img.shields.io/badge/i386-yes-green.svg
 
-[miconnector-shield]: https://img.shields.io/badge/miconnector-0.0.5-orange.svg
+[miconnector-shield]: https://img.shields.io/badge/miconnector-0.0.6-orange.svg
 [lgconnector-shield]: https://img.shields.io/badge/lgconnector-0.0.5-orange.svg
 [ghconnector-shield]: https://img.shields.io/badge/ghconnector-0.0.5-orange.svg
