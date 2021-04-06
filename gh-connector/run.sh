@@ -16,7 +16,7 @@ sed -i '10,22s|config/gh-config.json|config/gh-connector/gh-config.json|' util/c
 echo "[Info] GH-Connector addons log.js editing"
 sed -i '30s|config/gh-connector.log|config/gh-connector/gh-connector.log|' util/log.js
 
-sed -i '337s|   console.log(req);' routes/googleHome.js
+sed -i '337s||   console.log(req);|' routes/googleHome.js
 
 # Change sevice/mp3.js
 echo "[Info] GH-Connector addons mp3.js editing"
