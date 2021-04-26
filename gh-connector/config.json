@@ -25,11 +25,15 @@
     "30010/tcp": "Web interface (Not required for Hass.io Ingress)"
   },
   "options": {
-    "data_path": "/share/ghconnector",
+    "data_path": "/share/gh-connector",
+    "music_path": "share/gh-connector/music",
+    "music1_path": "share/gh-connector/music1",
     "homeassistant": true
   },
   "schema": {
     "data_path": "str",
+    "music_path": "str",
+    "music1_path": "str",
     "homeassistant": "bool"
   }
 }
