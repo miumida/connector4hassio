@@ -26,14 +26,16 @@
   },
   "options": {
     "data_path": "/share/gh-connector",
-    "music_path": "share/gh-connector/music",
-    "music1_path": "share/gh-connector/music1",
+    "music1_path": "share/gh-connector/music",
+    "music2_path": "share/gh-connector/music2",
+    "music3_path": "share/gh-connector/music3",
     "homeassistant": true
   },
   "schema": {
     "data_path": "str",
-    "music_path": "str",
     "music1_path": "str",
+    "music2_path": "str",
+    "music3_path": "str",
     "homeassistant": "bool"
   }
 }
