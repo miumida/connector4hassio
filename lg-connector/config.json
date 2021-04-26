@@ -26,10 +26,10 @@
   },
   "options": {
     "data_path": "/share/lg-connector",
-    "homeassistant": true
+    "polling_time": 5
   },
   "schema": {
     "data_path": "str",
-    "homeassistant": "bool"
+    "polling_time": "int"
   }
 }
