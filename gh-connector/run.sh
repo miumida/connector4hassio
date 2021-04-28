@@ -1,8 +1,10 @@
 CONFIG_PATH=/data/options.json
 
-#MUSIC1=$(jq --raw-output ".music1_path" $CONFIG_PATH)
-#MUSIC2=$(jq --raw-output ".music2_path" $CONFIG_PATH)
-#MUSIC3=$(jq --raw-output ".music3_path" $CONFIG_PATH)
+MUSIC1=$(jq --raw-output ".music1_path" $CONFIG_PATH)
+MUSIC2=$(jq --raw-output ".music2_path" $CONFIG_PATH)
+MUSIC3=$(jq --raw-output ".music3_path" $CONFIG_PATH)
+
+echo "[Info] music1 mount path is ${MUSIC1}"
 
 # Check if config exists already
 mkdir -p /config/gh-connector
