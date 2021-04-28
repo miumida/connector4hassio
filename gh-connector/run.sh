@@ -5,13 +5,15 @@ MUSIC2=$(jq --raw-output ".music2_path" $CONFIG_PATH)
 MUSIC3=$(jq --raw-output ".music3_path" $CONFIG_PATH)
 
 echo "[Info] music1 mount path is ${MUSIC1}"
+echo "[Info] music2 mount path is ${MUSIC2}"
+echo "[Info] music3 mount path is ${MUSIC3}"
 
 # Check if config exists already
 mkdir -p /config/gh-connector
 mkdir -p /share/gh-connector
 mkdir -p /share/gh-connector/music
-#mkdir -p $MUSIC2
-#mkdir -p $MUSIC3
+mkdir -p $MUSIC2
+mkdir -p $MUSIC3
 
 # Check gh-config.json file Not exists
 if [[ ! -f /config/gh-connector/gh-config.json ]]; then
