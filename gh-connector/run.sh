@@ -31,8 +31,8 @@ sed -i '30s|config/gh-connector.log|config/gh-connector/gh-connector.log|' util/
 # Change sevice/mp3.js
 echo "[Info] GH-Connector addons mp3.js editing"
 sed -i '17s|/music1|/share/gh-connector/music|' service/mp3.js
-sed -i '18s|/music2|${MUSIC2}|' service/mp3.js
-sed -i '19s|/music3|${MUSIC3}|' service/mp3.js
+sed -i '18s|/music2|/share/gh-connector/music2|' service/mp3.js
+sed -i '19s|/music3|/share/gh-connector/music3|' service/mp3.js
 
 # Check
 #if [[ -f $DATA_PATH/configuration.yaml ]]; then
