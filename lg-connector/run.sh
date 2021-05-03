@@ -15,4 +15,8 @@ sed -i '10,23s|config/lg-config.json|config/lg-connector/lg-config.json|' util/c
 echo "[Info] LG-Connector addons log.js editing"
 sed -i '29s|config/lg-connector.log|config/lg-connector/lg-connector.log|' util/log.js
 
+# Edit util/log.js
+echo "[Info] LG-Connector addons service/smartthinq/v1/monitor.js editing"
+sed -i '178s|// | |' service/smartthinq/v1/monitor.js
+
 npm start
