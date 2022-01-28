@@ -28,7 +28,7 @@
 
 ### Installation
 1. Supervisor > ADD-ON STORE에서 Add new repository by URL에 '<https://github.com/miumida/connector4hassio>' 입력 후, "ADD" 버튼을 클릭하여 추가합니다.
-2. ADD-ON STORE 페이지 하단에서 "Mi-Connector" 클릭합니다.
+2. ADD-ON STORE 페이지 하단에서 "-Connector" 클릭합니다.
 3. "INSTALL" 버튼을 누르면 애드온이 설치됩니다.
 <br><br>
 
