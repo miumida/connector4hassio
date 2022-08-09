@@ -45,5 +45,5 @@
 
 [version-shield]: https://img.shields.io/badge/version-1.0.0(beta)-orange.svg
 [addon-shield]: https://img.shields.io/badge/addon-1.0.0(dev)-orange.svg
-[miconnector-shield]: https://img.shields.io/badge/miconnector-0.0.6-orange.svg
+[miconnector-shield]: https://img.shields.io/badge/miconnector-0.0.7-orange.svg
 
