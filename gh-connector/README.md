@@ -34,7 +34,7 @@
 
 ### Reference Site
 - 아기나무집님의 GH-Connector github (https://github.com/fison67/GH-Connector)
-- dockerhub의 fison67/gh-connector-rasp (https://hub.docker.com/r/fison67/gh-connector-rasp)
+- dockerhub의 fison67/gh-connector (https://hub.docker.com/r/fison67/gh-connector)
 
 [forum]: https://cafe.naver.com/koreassistant
 [github]: https://github.com/HAKorea/addons
