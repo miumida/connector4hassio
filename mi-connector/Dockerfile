@@ -1,4 +1,4 @@
-FROM fison67/mi-connector:0.0.6
+FROM fison67/mi-connector:0.0.7
 
 WORKDIR /usr/src/app
 
