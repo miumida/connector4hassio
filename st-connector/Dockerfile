@@ -4,7 +4,7 @@ WORKDIR /usr/src/app
 
 RUN apt-get install jq -y
 
-COPY run.sh "/usr/src/app/run.sh"
+#COPY run.sh "/usr/src/app/run.sh"
 
 # docker port open 4000
 EXPOSE 4000
