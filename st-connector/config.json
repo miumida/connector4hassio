@@ -1,0 +1,41 @@
+{
+  "name": "ST-Connector",
+  "version": "1.0.0",
+  "slug": "stconnector",
+  "description": "ST-Connector for Hass.io",
+  "uart": true,
+  "url": "https://github.com/miumida/connector4hassio",
+  "host_network":true,
+  "startup": "services",
+  "arch": [
+    "amd64",
+    "armv7"
+  ],
+  "boot": "auto",
+  "map": [
+    "share:rw",
+    "config:rw"
+  ],
+  "panel_icon": "mdi:alpha-s-box",
+  "webui": "http://[HOST]:[PORT:4000]",
+  "ports": {
+    "4000/tcp": 4000
+  },
+  "ports_description": {
+    "4000/tcp": "Web interface (Not required for Hass.io Ingress)"
+  },
+  "options": {
+    "homeassistant": true,
+    "data_path": "/share/gh-connector",
+    "music1_path": "/share/gh-connector/music",
+    "music2_path": "/share/gh-connector/music2",
+    "music3_path": "/share/gh-connector/music3"
+  },
+  "schema": {
+    "homeassistant": "bool",
+    "data_path": "str",
+    "music1_path": "str",
+    "music2_path": "str",
+    "music3_path": "str"
+  }
+}
