@@ -2,6 +2,7 @@
 
 ![Supports armv7 Architecture][armv7-shield]
 ![Supports amd64 Architecture][amd64-shield]
+![stconnector][stconnector-shield]
 ![miconnector][miconnector-shield]
 ![lgconnector][lgconnector-shield]
 ![ghconnector][ghconnector-shield]
@@ -15,12 +16,14 @@
 <br><br>
 
 ### Support Connector List(version)
+#### ST-Connector:0.0.2
+- amd64 / arm64 / armv7
 #### GH-Connector:0.0.5
-- amd64 / arm7 
+- amd64 / armv7 
 #### LG-Connector:0.0.5
-- amd64 / arm7 
+- amd64 / armv7 
 #### Mi-Connector:0.0.7
-- amd64 / arm7 
+- amd64 / armv7 
 <br><br>
 
 ### Installation
@@ -30,12 +33,14 @@
 <br><br>
 
 ### Reference Site
+
 - 아기나무집님의 GH-Connector github (<https://github.com/fison67/GH-Connector>)
 - 아기나무집님의 mi_connector github (<https://github.com/fison67/mi_connector>)
 - 아기나무집님의 LG-Connector github (<https://github.com/fison67/LG-Connector>)
 - dockerhub의 fison67/gh-connector (<https://hub.docker.com/r/fison67/gh-connector>)
 - dockerhub의 fison67/mi-connector (<https://hub.docker.com/r/fison67/mi-connector>)
 - dockerhub의 fison67/lg-connector (<https://hub.docker.com/r/fison67/lg-connector>)
+- dockerhub의 fison67/st-connector (<https://hub.docker.com/r/fison67/st-connector>)
 
 
 [forum]: https://cafe.naver.com/koreassistant
@@ -50,3 +55,4 @@
 [miconnector-shield]: https://img.shields.io/badge/miconnector-0.0.7-orange.svg
 [lgconnector-shield]: https://img.shields.io/badge/lgconnector-0.0.5-orange.svg
 [ghconnector-shield]: https://img.shields.io/badge/ghconnector-0.0.5-orange.svg
+[stconnector-shield]: https://img.shields.io/badge/stconnector-0.0.2-orange.svg
