@@ -1,4 +1,4 @@
-FROM fison67/st-connector:0.0.2
+FROM fison67/st-connector:0.0.3
 
 WORKDIR /usr/src/app
 
