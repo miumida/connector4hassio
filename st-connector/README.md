@@ -44,4 +44,4 @@
 [i386-shield]: https://img.shields.io/badge/i386-yes-green.svg
 
 [addons-shield]: https://img.shields.io/badge/addons-1.0.0-orange.svg
-[st-connector-shield]: https://img.shields.io/badge/stconnector-0.0.2-orange.svg
+[st-connector-shield]: https://img.shields.io/badge/stconnector-0.0.3-orange.svg
