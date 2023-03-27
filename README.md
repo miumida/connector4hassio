@@ -16,7 +16,7 @@
 <br><br>
 
 ### Support Connector List(version)
-#### ST-Connector:0.0.2
+#### ST-Connector:0.0.3
 - amd64 / arm64 / armv7
 #### GH-Connector:0.0.5
 - amd64 / armv7 
@@ -55,4 +55,4 @@
 [miconnector-shield]: https://img.shields.io/badge/miconnector-0.0.7-orange.svg
 [lgconnector-shield]: https://img.shields.io/badge/lgconnector-0.0.5-orange.svg
 [ghconnector-shield]: https://img.shields.io/badge/ghconnector-0.0.5-orange.svg
-[stconnector-shield]: https://img.shields.io/badge/stconnector-0.0.2-orange.svg
+[stconnector-shield]: https://img.shields.io/badge/stconnector-0.0.3-orange.svg
